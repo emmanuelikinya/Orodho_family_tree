@@ -67,7 +67,8 @@ export const transformToFlowData = (familyMembers) => {
   const spouseSpacingXEarly = 100; // Horizontal space between husband and wife (early generations)
   const spouseSpacingXLater = 30; // Horizontal space between husband and wife (generation B+)
   const spouseSpacingY = 130; // Vertical space between multiple wives (stacked with overlap)
-  const siblingSpacing = 400; // Space between sibling family units (increased for large families)
+  const siblingSpacing = 200; // Space between children within same family
+  const familyUnitSpacing = 1000; // Space between sibling family units (B generation)
   const generationSpacing = 250; // Vertical space between generations
   const generationBThreshold = 7; // Generation level where B starts (Canon Ezekiel's children)
 
@@ -180,7 +181,9 @@ export const transformToFlowData = (familyMembers) => {
                 if (spouse.children) grandchildrenCount += spouse.children.length;
               });
               if (grandchildrenCount > 0) {
-                childWidth = Math.max(childWidth, (grandchildrenCount * nodeWidth) + ((grandchildrenCount - 1) * siblingSpacing));
+                // Use appropriate spacing for grandchildren
+                const grandchildSpacing = (generation + 2) === generationBThreshold ? familyUnitSpacing : siblingSpacing;
+                childWidth = Math.max(childWidth, (grandchildrenCount * nodeWidth) + ((grandchildrenCount - 1) * grandchildSpacing));
               }
             }
 
@@ -189,8 +192,9 @@ export const transformToFlowData = (familyMembers) => {
           }
         });
 
-        // Add spacing between children
-        totalChildrenWidth += (allChildren.length - 1) * siblingSpacing;
+        // Add spacing between children (use larger spacing for B generation siblings)
+        const childSpacing = (generation + 1) === generationBThreshold ? familyUnitSpacing : siblingSpacing;
+        totalChildrenWidth += (allChildren.length - 1) * childSpacing;
 
         // Calculate the center point between the person and the rightmost spouse
         const familyCenter = (currentX + rightmostX) / 2;
@@ -206,12 +210,15 @@ export const transformToFlowData = (familyMembers) => {
             // Recursively layout this child's family
             const childResult = layoutFamilyUnit(childId, childCurrentX, startY, generation + 1);
 
+            // Use larger spacing for B generation siblings
+            const childSpacing = (generation + 1) === generationBThreshold ? familyUnitSpacing : siblingSpacing;
+
             // Update rightmost position if this child's subtree extends further
             if (childResult && childResult.rightmostX) {
               rightmostX = Math.max(rightmostX, childResult.rightmostX);
-              childCurrentX = childResult.rightmostX + siblingSpacing;
+              childCurrentX = childResult.rightmostX + childSpacing;
             } else {
-              childCurrentX += childSubtreeWidths[childIndex] + siblingSpacing;
+              childCurrentX += childSubtreeWidths[childIndex] + childSpacing;
             }
 
             // Create parent-child edge from the main person (father/mother)
