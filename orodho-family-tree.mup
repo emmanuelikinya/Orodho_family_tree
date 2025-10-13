@@ -1,0 +1,433 @@
+{
+  "id": "root",
+  "formatVersion": 3,
+  "title": "Orodho Family Tree",
+  "attr": {
+    "style": {
+      "background": "#E8F5E9"
+    }
+  },
+  "ideas": {
+    "1": {
+      "title": "Generation 1: Moola",
+      "id": 2,
+      "attr": {
+        "style": {
+          "background": "#BBDEFB"
+        },
+        "note": {
+          "text": "Founding ancestor of the Orodho family lineage. Father of Makutsa."
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Wife of Moola",
+          "id": 3,
+          "attr": {
+            "style": {
+              "background": "#F8BBD0"
+            },
+            "note": {
+              "text": "Wife of Moola. Mother of Makutsa."
+            }
+          }
+        },
+        "2": {
+          "title": "Generation 2: Makutsa",
+          "id": 4,
+          "attr": {
+            "style": {
+              "background": "#BBDEFB"
+            },
+            "note": {
+              "text": "Son of Moola. Father of Aluviri. Second generation of the Orodho lineage."
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Wife of Makutsa",
+              "id": 5,
+              "attr": {
+                "style": {
+                  "background": "#F8BBD0"
+                },
+                "note": {
+                  "text": "Wife of Makutsa. Mother of Aluviri."
+                }
+              }
+            },
+            "2": {
+              "title": "Generation 3: Aluviri",
+              "id": 6,
+              "attr": {
+                "style": {
+                  "background": "#BBDEFB"
+                },
+                "note": {
+                  "text": "Son of Makutsa. Father of Ashioya. Third generation of the Orodho lineage."
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "Wife of Aluviri",
+                  "id": 7,
+                  "attr": {
+                    "style": {
+                      "background": "#F8BBD0"
+                    },
+                    "note": {
+                      "text": "Wife of Aluviri. Mother of Ashioya."
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Generation 4: Ashioya",
+                  "id": 8,
+                  "attr": {
+                    "style": {
+                      "background": "#BBDEFB"
+                    },
+                    "note": {
+                      "text": "Son of Aluviri. Father of Maare. Fourth generation of the Orodho lineage."
+                    }
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "Wife of Ashioya",
+                      "id": 9,
+                      "attr": {
+                        "style": {
+                          "background": "#F8BBD0"
+                        },
+                        "note": {
+                          "text": "Wife of Ashioya. Mother of Maare."
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "Generation 5: Maare",
+                      "id": 10,
+                      "attr": {
+                        "style": {
+                          "background": "#BBDEFB"
+                        },
+                        "note": {
+                          "text": "Son of Ashioya. Father of Jeremiah Ogongo. Fifth generation of the Orodho lineage."
+                        }
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "Wife of Maare",
+                          "id": 11,
+                          "attr": {
+                            "style": {
+                              "background": "#F8BBD0"
+                            },
+                            "note": {
+                              "text": "Wife of Maare. Mother of Jeremiah Ogongo."
+                            }
+                          }
+                        },
+                        "2": {
+                          "title": "Generation 6: Jeremiah Ogongo",
+                          "id": 12,
+                          "attr": {
+                            "style": {
+                              "background": "#BBDEFB"
+                            },
+                            "note": {
+                              "text": "Son of Maare. Husband to Susan Munayi. Father of Canon Ezekiel Orodho."
+                            }
+                          },
+                          "ideas": {
+                            "1": {
+                              "title": "Susan Munayi",
+                              "id": 13,
+                              "attr": {
+                                "style": {
+                                  "background": "#F8BBD0"
+                                },
+                                "note": {
+                                  "text": "Wife of Jeremiah Ogongo. Mother of Canon Ezekiel Orodho."
+                                }
+                              }
+                            },
+                            "2": {
+                              "title": "Generation 7: Canon Ezekiel Orodho (A01)",
+                              "id": 14,
+                              "attr": {
+                                "style": {
+                                  "background": "#4CAF50"
+                                },
+                                "note": {
+                                  "text": "MAIN CHARACTER. Canon Ezekiel Orodho, son of Jeremiah Ogongo and Susan Munayi. Husband to Beldinah Indieka Orodho. Father of 7 children (6 boys, 1 girl). Living."
+                                }
+                              },
+                              "ideas": {
+                                "1": {
+                                  "title": "Beldinah Indieka Orodho",
+                                  "id": 15,
+                                  "attr": {
+                                    "style": {
+                                      "background": "#81C784"
+                                    },
+                                    "note": {
+                                      "text": "Wife of Canon Ezekiel Orodho. Mother of 7 children (6 boys, 1 girl). Living."
+                                    }
+                                  }
+                                },
+                                "2": {
+                                  "title": "Generation 8: Children of Canon Ezekiel",
+                                  "id": 16,
+                                  "attr": {
+                                    "style": {
+                                      "background": "#FFF9C4"
+                                    }
+                                  },
+                                  "ideas": {
+                                    "1": {
+                                      "title": "Edward Ohare (B01)",
+                                      "id": 17,
+                                      "attr": {
+                                        "style": {
+                                          "background": "#4CAF50"
+                                        },
+                                        "note": {
+                                          "text": "First child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Married to Agnes, Esther, and Juliana. Father of 10 children. Living."
+                                        }
+                                      },
+                                      "ideas": {
+                                        "1": {
+                                          "title": "Wife 1: Agnes",
+                                          "id": 18,
+                                          "attr": {
+                                            "style": {
+                                              "background": "#81C784"
+                                            },
+                                            "note": {
+                                              "text": "First wife of Edward Ohare. Mother of Susan, Jimmy (James Ogongo), Patrick Osimbo, and Monica. Living."
+                                            }
+                                          },
+                                          "ideas": {
+                                            "1": {
+                                              "title": "Susan (C01)",
+                                              "id": 19,
+                                              "attr": {
+                                                "style": {
+                                                  "background": "#A5D6A7"
+                                                }
+                                              }
+                                            },
+                                            "2": {
+                                              "title": "Jimmy - James Ogongo (C02)",
+                                              "id": 20,
+                                              "attr": {
+                                                "style": {
+                                                  "background": "#A5D6A7"
+                                                }
+                                              }
+                                            },
+                                            "3": {
+                                              "title": "Patrick Osimbo (C03)",
+                                              "id": 21,
+                                              "attr": {
+                                                "style": {
+                                                  "background": "#A5D6A7"
+                                                }
+                                              }
+                                            },
+                                            "4": {
+                                              "title": "Monica (C04)",
+                                              "id": 22,
+                                              "attr": {
+                                                "style": {
+                                                  "background": "#A5D6A7"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "2": {
+                                          "title": "Wife 2: Esther",
+                                          "id": 23,
+                                          "attr": {
+                                            "style": {
+                                              "background": "#81C784"
+                                            },
+                                            "note": {
+                                              "text": "Second wife of Edward Ohare. Mother of Joel Mukoya, Joseph Amuli, Abigael Nyakoa, and Peter Ashioya Ohare. Living."
+                                            }
+                                          },
+                                          "ideas": {
+                                            "1": {
+                                              "title": "Joel Mukoya (C05)",
+                                              "id": 24,
+                                              "attr": {
+                                                "style": {
+                                                  "background": "#A5D6A7"
+                                                }
+                                              }
+                                            },
+                                            "2": {
+                                              "title": "Joseph Amuli (C06)",
+                                              "id": 25,
+                                              "attr": {
+                                                "style": {
+                                                  "background": "#A5D6A7"
+                                                }
+                                              }
+                                            },
+                                            "3": {
+                                              "title": "Abigael Nyakoa (C07)",
+                                              "id": 26,
+                                              "attr": {
+                                                "style": {
+                                                  "background": "#A5D6A7"
+                                                }
+                                              }
+                                            },
+                                            "4": {
+                                              "title": "Peter Ashioya Ohare (C08)",
+                                              "id": 27,
+                                              "attr": {
+                                                "style": {
+                                                  "background": "#A5D6A7"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "3": {
+                                          "title": "Wife 3: Juliana",
+                                          "id": 28,
+                                          "attr": {
+                                            "style": {
+                                              "background": "#81C784"
+                                            },
+                                            "note": {
+                                              "text": "Third wife of Edward Ohare. Mother of Mary and Christine Ndunge (both living in the US). Living."
+                                            }
+                                          },
+                                          "ideas": {
+                                            "1": {
+                                              "title": "Mary (C09) - USA",
+                                              "id": 29,
+                                              "attr": {
+                                                "style": {
+                                                  "background": "#A5D6A7"
+                                                },
+                                                "note": {
+                                                  "text": "Currently living in the US."
+                                                }
+                                              }
+                                            },
+                                            "2": {
+                                              "title": "Christine Ndunge (C10) - USA",
+                                              "id": 30,
+                                              "attr": {
+                                                "style": {
+                                                  "background": "#A5D6A7"
+                                                },
+                                                "note": {
+                                                  "text": "Currently living in the US."
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "2": {
+                                      "title": "Christopher Oyoo (B02)",
+                                      "id": 31,
+                                      "attr": {
+                                        "style": {
+                                          "background": "#81C784"
+                                        },
+                                        "note": {
+                                          "text": "Second child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Living."
+                                        }
+                                      }
+                                    },
+                                    "3": {
+                                      "title": "Alexander Opiyo (B03)",
+                                      "id": 32,
+                                      "attr": {
+                                        "style": {
+                                          "background": "#81C784"
+                                        },
+                                        "note": {
+                                          "text": "Third child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Living."
+                                        }
+                                      }
+                                    },
+                                    "4": {
+                                      "title": "Apolo Bwonya (B04)",
+                                      "id": 33,
+                                      "attr": {
+                                        "style": {
+                                          "background": "#81C784"
+                                        },
+                                        "note": {
+                                          "text": "Fourth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Living."
+                                        }
+                                      }
+                                    },
+                                    "5": {
+                                      "title": "Nicodemus Ongeso (B05)",
+                                      "id": 34,
+                                      "attr": {
+                                        "style": {
+                                          "background": "#81C784"
+                                        },
+                                        "note": {
+                                          "text": "Fifth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Living."
+                                        }
+                                      }
+                                    },
+                                    "6": {
+                                      "title": "Jael Etaliah (B06)",
+                                      "id": 35,
+                                      "attr": {
+                                        "style": {
+                                          "background": "#F48FB1"
+                                        },
+                                        "note": {
+                                          "text": "Sixth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. The only daughter among 7 children. Living."
+                                        }
+                                      }
+                                    },
+                                    "7": {
+                                      "title": "John Aluko Orodho (B07)",
+                                      "id": 36,
+                                      "attr": {
+                                        "style": {
+                                          "background": "#81C784"
+                                        },
+                                        "note": {
+                                          "text": "Seventh child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Living."
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "links": [],
+  "attr": {
+    "theme": "default"
+  }
+}

@@ -1,0 +1,568 @@
+{
+  "familyMembers": [
+    {
+      "id": "wife-of-moola",
+      "name": "Wife of Moola",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Wife of Moola. Mother of Makutsa.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "moola",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["makutsa"]
+        }
+      ]
+    },
+    {
+      "id": "moola",
+      "name": "Moola",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Founding ancestor of the Orodho family lineage. Father of Makutsa.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "wife-of-moola",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["makutsa"]
+        }
+      ]
+    },
+    {
+      "id": "wife-of-makutsa",
+      "name": "Wife of Makutsa",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Wife of Makutsa. Mother of Aluviri.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "makutsa",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["aluviri"]
+        }
+      ]
+    },
+    {
+      "id": "makutsa",
+      "name": "Makutsa",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Son of Moola. Father of Aluviri. Second generation of the Orodho lineage.",
+      "parents": ["moola", "wife-of-moola"],
+      "spouses": [
+        {
+          "spouseId": "wife-of-makutsa",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["aluviri"]
+        }
+      ]
+    },
+    {
+      "id": "wife-of-aluviri",
+      "name": "Wife of Aluviri",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Wife of Aluviri. Mother of Ashioya.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "aluviri",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["ashioya"]
+        }
+      ]
+    },
+    {
+      "id": "aluviri",
+      "name": "Aluviri",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Son of Makutsa. Father of Ashioya. Third generation of the Orodho lineage.",
+      "parents": ["makutsa", "wife-of-makutsa"],
+      "spouses": [
+        {
+          "spouseId": "wife-of-aluviri",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["ashioya"]
+        }
+      ]
+    },
+    {
+      "id": "wife-of-ashioya",
+      "name": "Wife of Ashioya",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Wife of Ashioya. Mother of Maare.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "ashioya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["maare"]
+        }
+      ]
+    },
+    {
+      "id": "ashioya",
+      "name": "Ashioya",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Son of Aluviri. Father of Maare. Fourth generation of the Orodho lineage.",
+      "parents": ["aluviri", "wife-of-aluviri"],
+      "spouses": [
+        {
+          "spouseId": "wife-of-ashioya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["maare"]
+        }
+      ]
+    },
+    {
+      "id": "wife-of-maare",
+      "name": "Wife of Maare",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Wife of Maare. Mother of Jeremiah Ogongo.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "maare",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["jeremiah-ogongo"]
+        }
+      ]
+    },
+    {
+      "id": "maare",
+      "name": "Maare",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Son of Ashioya. Father of Jeremiah Ogongo. Fifth generation of the Orodho lineage.",
+      "parents": ["ashioya", "wife-of-ashioya"],
+      "spouses": [
+        {
+          "spouseId": "wife-of-maare",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["jeremiah-ogongo"]
+        }
+      ]
+    },
+    {
+      "id": "susan-munayi",
+      "name": "Susan Munayi",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Wife of Jeremiah Ogongo. Mother of Canon Ezekiel Orodho.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "jeremiah-ogongo",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["ezekiel-orodho"]
+        }
+      ]
+    },
+    {
+      "id": "jeremiah-ogongo",
+      "name": "Jeremiah Ogongo",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Son of Maare. Husband to Susan Munayi. Father of Canon Ezekiel Orodho.",
+      "parents": ["maare", "wife-of-maare"],
+      "spouses": [
+        {
+          "spouseId": "susan-munayi",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["ezekiel-orodho"]
+        }
+      ]
+    },
+    {
+      "id": "beldinah-indieka",
+      "name": "Beldinah Indieka Orodho",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Wife of Canon Ezekiel Orodho. Mother of 7 children (6 boys, 1 girl).",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "ezekiel-orodho",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["edward-ohare", "christopher-oyoo", "alexander-opiyo", "apolo-bwonya", "nicodemus-ongeso", "jael-etaliah", "john-aluko-orodho"]
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-orodho",
+      "name": "Canon Ezekiel Orodho",
+      "memberId": "A01",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "MAIN CHARACTER. Canon Ezekiel Orodho, son of Jeremiah Ogongo and Susan Munayi. Husband to Beldinah Indieka Orodho. Father of 7 children (6 boys, 1 girl).",
+      "parents": ["jeremiah-ogongo", "susan-munayi"],
+      "spouses": [
+        {
+          "spouseId": "beldinah-indieka",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["edward-ohare", "christopher-oyoo", "alexander-opiyo", "apolo-bwonya", "nicodemus-ongeso", "jael-etaliah", "john-aluko-orodho"]
+        }
+      ]
+    },
+    {
+      "id": "agnes-ohare",
+      "name": "Agnes",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "First wife of Edward Ohare. Mother of Susan, Jimmy (James Ogongo), Patrick Osimbo, and Monica.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "edward-ohare",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["susan-ohare", "jimmy-james-ogongo", "patrick-osimbo", "monica-ohare"]
+        }
+      ]
+    },
+    {
+      "id": "esther-ohare",
+      "name": "Esther",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Second wife of Edward Ohare. Mother of Joel Mukoya, Joseph Amuli, Abigael Nyakoa, and Peter Ashioya Ohare.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "edward-ohare",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["joel-mukoya", "joseph-amuli", "abigael-nyakoa", "peter-ashioya-ohare"]
+        }
+      ]
+    },
+    {
+      "id": "juliana-ohare",
+      "name": "Juliana",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Third wife of Edward Ohare. Mother of Mary and Christine Ndunge (both living in the US).",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "edward-ohare",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["mary-ohare", "christine-ndunge"]
+        }
+      ]
+    },
+    {
+      "id": "edward-ohare",
+      "name": "Edward Ohare",
+      "memberId": "B01",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "First child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Married to Agnes, Esther, and Juliana. Father of 10 children.",
+      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "spouses": [
+        {
+          "spouseId": "agnes-ohare",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["susan-ohare", "jimmy-james-ogongo", "patrick-osimbo", "monica-ohare"]
+        },
+        {
+          "spouseId": "esther-ohare",
+          "marriageDate": null,
+          "marriageOrder": 2,
+          "children": ["joel-mukoya", "joseph-amuli", "abigael-nyakoa", "peter-ashioya-ohare"]
+        },
+        {
+          "spouseId": "juliana-ohare",
+          "marriageDate": null,
+          "marriageOrder": 3,
+          "children": ["mary-ohare", "christine-ndunge"]
+        }
+      ]
+    },
+    {
+      "id": "susan-ohare",
+      "name": "Susan",
+      "memberId": "C01",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Daughter of Edward Ohare and Agnes.",
+      "parents": ["edward-ohare", "agnes-ohare"],
+      "spouses": []
+    },
+    {
+      "id": "jimmy-james-ogongo",
+      "name": "Jimmy (James Ogongo)",
+      "memberId": "C02",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Son of Edward Ohare and Agnes.",
+      "parents": ["edward-ohare", "agnes-ohare"],
+      "spouses": []
+    },
+    {
+      "id": "patrick-osimbo",
+      "name": "Patrick Osimbo",
+      "memberId": "C03",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Son of Edward Ohare and Agnes.",
+      "parents": ["edward-ohare", "agnes-ohare"],
+      "spouses": []
+    },
+    {
+      "id": "monica-ohare",
+      "name": "Monica",
+      "memberId": "C04",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Daughter of Edward Ohare and Agnes.",
+      "parents": ["edward-ohare", "agnes-ohare"],
+      "spouses": []
+    },
+    {
+      "id": "joel-mukoya",
+      "name": "Joel Mukoya",
+      "memberId": "C05",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Son of Edward Ohare and Esther.",
+      "parents": ["edward-ohare", "esther-ohare"],
+      "spouses": []
+    },
+    {
+      "id": "joseph-amuli",
+      "name": "Joseph Amuli",
+      "memberId": "C06",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Son of Edward Ohare and Esther.",
+      "parents": ["edward-ohare", "esther-ohare"],
+      "spouses": []
+    },
+    {
+      "id": "abigael-nyakoa",
+      "name": "Abigael Nyakoa",
+      "memberId": "C07",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Daughter of Edward Ohare and Esther.",
+      "parents": ["edward-ohare", "esther-ohare"],
+      "spouses": []
+    },
+    {
+      "id": "peter-ashioya-ohare",
+      "name": "Peter Ashioya Ohare",
+      "memberId": "C08",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Son of Edward Ohare and Esther.",
+      "parents": ["edward-ohare", "esther-ohare"],
+      "spouses": []
+    },
+    {
+      "id": "mary-ohare",
+      "name": "Mary",
+      "memberId": "C09",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Daughter of Edward Ohare and Juliana. Currently living in the US.",
+      "parents": ["edward-ohare", "juliana-ohare"],
+      "spouses": []
+    },
+    {
+      "id": "christine-ndunge",
+      "name": "Christine Ndunge",
+      "memberId": "C10",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Daughter of Edward Ohare and Juliana. Currently living in the US.",
+      "parents": ["edward-ohare", "juliana-ohare"],
+      "spouses": []
+    },
+    {
+      "id": "christopher-oyoo",
+      "name": "Christopher Oyoo",
+      "memberId": "B02",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Second child of Canon Ezekiel Orodho and Beldinah Indieka Orodho.",
+      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "spouses": []
+    },
+    {
+      "id": "alexander-opiyo",
+      "name": "Alexander Opiyo",
+      "memberId": "B03",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Third child of Canon Ezekiel Orodho and Beldinah Indieka Orodho.",
+      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "spouses": []
+    },
+    {
+      "id": "apolo-bwonya",
+      "name": "Apolo Bwonya",
+      "memberId": "B04",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Fourth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho.",
+      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "spouses": []
+    },
+    {
+      "id": "nicodemus-ongeso",
+      "name": "Nicodemus Ongeso",
+      "memberId": "B05",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Fifth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho.",
+      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "spouses": []
+    },
+    {
+      "id": "jael-etaliah",
+      "name": "Jael Etaliah",
+      "memberId": "B06",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Sixth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. The only daughter among 7 children.",
+      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "spouses": []
+    },
+    {
+      "id": "john-aluko-orodho",
+      "name": "John Aluko Orodho",
+      "memberId": "B07",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Seventh child of Canon Ezekiel Orodho and Beldinah Indieka Orodho.",
+      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "spouses": []
+    }
+  ]
+}
