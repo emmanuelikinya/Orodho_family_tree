@@ -68,7 +68,7 @@ export const transformToFlowData = (familyMembers) => {
   const spouseSpacingXLater = 30; // Horizontal space between husband and wife (generation B+)
   const spouseSpacingY = 120; // Vertical space between multiple wives (stacked with overlap)
   const siblingSpacing = 120; // Space between children within same family
-  const familyUnitSpacing = 700; // Space between sibling family units (B generation)
+  const familyUnitSpacing = 1200; // Space between sibling family units (B generation) - increased to prevent overlaps
   const generationSpacing = 280; // Vertical space between generations
   const generationBThreshold = 7; // Generation level where B starts (Canon Ezekiel's children)
 
@@ -255,6 +255,8 @@ export const transformToFlowData = (familyMembers) => {
             // Update rightmost position using actual layout result
             if (childResult && childResult.rightmostX) {
               rightmostX = Math.max(rightmostX, childResult.rightmostX);
+              // Use the larger of calculated width or actual width, plus spacing
+              const actualWidth = childResult.rightmostX - childCurrentX;
               childCurrentX = childResult.rightmostX + childSpacing;
             } else {
               childCurrentX += childSubtreeWidths[childIndex] + childSpacing;
