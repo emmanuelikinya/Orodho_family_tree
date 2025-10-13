@@ -66,7 +66,7 @@ export const transformToFlowData = (familyMembers) => {
   const nodeHeight = 200; // Height of each person card
   const spouseSpacingX = 100; // Horizontal space between husband and wife
   const spouseSpacingY = 50; // Vertical space between multiple wives (stacked)
-  const siblingSpacing = 50; // Space between siblings
+  const siblingSpacing = 150; // Space between sibling family units
   const generationSpacing = 250; // Vertical space between generations
 
   // Track positions
@@ -75,11 +75,12 @@ export const transformToFlowData = (familyMembers) => {
   // Layout family unit (couple + their children) recursively
   const layoutFamilyUnit = (personId, startX, startY, generation) => {
     if (positioned.has(personId)) {
-      return nodePositions.get(personId);
+      const existing = nodePositions.get(personId);
+      return { ...existing, rightmostX: existing.x + nodeWidth };
     }
 
     const person = memberMap.get(personId);
-    if (!person) return { x: startX, y: startY, width: nodeWidth };
+    if (!person) return { x: startX, y: startY, width: nodeWidth, rightmostX: startX + nodeWidth };
 
     let currentX = startX;
     const currentY = startY + (generation * generationSpacing);
@@ -149,9 +150,40 @@ export const transformToFlowData = (familyMembers) => {
 
       // Layout all children centered below the person and all spouses
       if (allChildren.length > 0) {
-        // Calculate total width needed for all children
-        const totalChildrenWidth = (allChildren.length * nodeWidth) +
-          ((allChildren.length - 1) * siblingSpacing);
+        // First, calculate space needed for each child's subtree
+        let totalChildrenWidth = 0;
+        let childSubtreeWidths = [];
+
+        // Temporarily calculate the width each child needs
+        allChildren.forEach((childId) => {
+          if (!positioned.has(childId)) {
+            const childMember = memberMap.get(childId);
+            // Estimate minimum width needed (will be refined during actual layout)
+            let childWidth = nodeWidth;
+
+            // If child has spouse(s), add their width
+            if (childMember && childMember.spouses && childMember.spouses.length > 0) {
+              childWidth += spouseSpacingX + nodeWidth;
+            }
+
+            // If child has children, they need more space
+            if (childMember && childMember.spouses) {
+              let grandchildrenCount = 0;
+              childMember.spouses.forEach(spouse => {
+                if (spouse.children) grandchildrenCount += spouse.children.length;
+              });
+              if (grandchildrenCount > 0) {
+                childWidth = Math.max(childWidth, (grandchildrenCount * nodeWidth) + ((grandchildrenCount - 1) * siblingSpacing));
+              }
+            }
+
+            childSubtreeWidths.push(childWidth);
+            totalChildrenWidth += childWidth;
+          }
+        });
+
+        // Add spacing between children
+        totalChildrenWidth += (allChildren.length - 1) * siblingSpacing;
 
         // Calculate the center point between the person and the rightmost spouse
         const familyCenter = (currentX + rightmostX) / 2;
@@ -160,13 +192,20 @@ export const transformToFlowData = (familyMembers) => {
         // Children should be placed below the lowest spouse
         const childrenY = bottommostY + generationSpacing;
 
-        // Position each child
+        // Position each child and track rightmost position
+        let childCurrentX = childStartX;
         allChildren.forEach((childId, childIndex) => {
           if (!positioned.has(childId)) {
-            const childX = childStartX + (childIndex * (nodeWidth + siblingSpacing));
-
             // Recursively layout this child's family
-            layoutFamilyUnit(childId, childX, startY, generation + 1);
+            const childResult = layoutFamilyUnit(childId, childCurrentX, startY, generation + 1);
+
+            // Update rightmost position if this child's subtree extends further
+            if (childResult && childResult.rightmostX) {
+              rightmostX = Math.max(rightmostX, childResult.rightmostX);
+              childCurrentX = childResult.rightmostX + siblingSpacing;
+            } else {
+              childCurrentX += childSubtreeWidths[childIndex] + siblingSpacing;
+            }
 
             // Create parent-child edge from the main person (father/mother)
             edges.push({
@@ -182,7 +221,7 @@ export const transformToFlowData = (familyMembers) => {
       }
     }
 
-    return { x: currentX, y: currentY, width: rightmostX - currentX };
+    return { x: currentX, y: currentY, width: rightmostX - currentX, rightmostX: rightmostX };
   };
 
   // Start with root members and layout each family tree
@@ -190,7 +229,8 @@ export const transformToFlowData = (familyMembers) => {
   roots.forEach((root, rootIndex) => {
     if (!positioned.has(root.id)) {
       const result = layoutFamilyUnit(root.id, currentX, 0, 0);
-      currentX = result.width + result.x + 300; // Add spacing between separate family trees
+      // Use rightmostX if available, otherwise fallback to calculated width
+      currentX = (result.rightmostX || (result.x + result.width)) + 300; // Add spacing between separate family trees
     }
   });
 
