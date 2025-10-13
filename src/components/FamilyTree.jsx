@@ -40,65 +40,28 @@ const FamilyTree = ({ familyMembers: initialFamilyMembers }) => {
     setAddingSpouseTo(person);
   }, []);
 
-  // API configuration
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
-
-  // Load saved positions from backend
-  const loadSavedPositions = useCallback(async () => {
+  // Load saved positions from localStorage
+  const loadSavedPositions = useCallback(() => {
     try {
-      const response = await fetch(`${API_URL}/positions`);
-      if (response.ok) {
-        const positions = await response.json();
-        return positions;
-      }
-      return {};
+      const saved = localStorage.getItem('familyTreePositions');
+      return saved ? JSON.parse(saved) : {};
     } catch (error) {
-      console.error('Error loading positions from server:', error);
-      // Fallback to localStorage if server is unavailable
-      try {
-        const saved = localStorage.getItem('familyTreePositions');
-        return saved ? JSON.parse(saved) : {};
-      } catch {
-        return {};
-      }
+      console.error('Error loading positions from localStorage:', error);
+      return {};
     }
   }, []);
 
-  // Save positions to backend
-  const savePositions = useCallback(async (nodes) => {
+  // Save positions to localStorage
+  const savePositions = useCallback((nodes) => {
     try {
       const positions = nodes.reduce((acc, node) => {
         acc[node.id] = { x: node.position.x, y: node.position.y };
         return acc;
       }, {});
-
-      // Save to server
-      const response = await fetch(`${API_URL}/positions`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(positions),
-      });
-
-      if (response.ok) {
-        console.log('Positions saved to server successfully');
-      }
-
-      // Also save to localStorage as backup
       localStorage.setItem('familyTreePositions', JSON.stringify(positions));
+      console.log('Positions saved to browser');
     } catch (error) {
-      console.error('Error saving positions to server:', error);
-      // Fallback to localStorage only if server fails
-      try {
-        const positions = nodes.reduce((acc, node) => {
-          acc[node.id] = { x: node.position.x, y: node.position.y };
-          return acc;
-        }, {});
-        localStorage.setItem('familyTreePositions', JSON.stringify(positions));
-      } catch (e) {
-        console.error('Error saving to localStorage:', e);
-      }
+      console.error('Error saving positions to localStorage:', error);
     }
   }, []);
 
@@ -128,23 +91,19 @@ const FamilyTree = ({ familyMembers: initialFamilyMembers }) => {
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const [positionsLoaded, setPositionsLoaded] = useState(false);
 
-  // Load positions from server on mount
+  // Load positions from localStorage on mount
   useEffect(() => {
-    const loadPositions = async () => {
-      const savedPositions = await loadSavedPositions();
+    const savedPositions = loadSavedPositions();
 
-      if (Object.keys(savedPositions).length > 0) {
-        setNodes(currentNodes =>
-          currentNodes.map(node => ({
-            ...node,
-            position: savedPositions[node.id] || node.position,
-          }))
-        );
-      }
-      setPositionsLoaded(true);
-    };
-
-    loadPositions();
+    if (Object.keys(savedPositions).length > 0) {
+      setNodes(currentNodes =>
+        currentNodes.map(node => ({
+          ...node,
+          position: savedPositions[node.id] || node.position,
+        }))
+      );
+    }
+    setPositionsLoaded(true);
   }, [loadSavedPositions, setNodes]);
 
   // Save positions whenever nodes change (with debouncing)
@@ -160,24 +119,20 @@ const FamilyTree = ({ familyMembers: initialFamilyMembers }) => {
 
   // Update nodes when family members change (preserving current positions)
   useEffect(() => {
-    const updateNodes = async () => {
-      const data = transformToFlowData(familyMembers);
-      const savedPositions = await loadSavedPositions();
+    const data = transformToFlowData(familyMembers);
+    const savedPositions = loadSavedPositions();
 
-      setNodes(data.nodes.map(node => ({
-        ...node,
-        position: savedPositions[node.id] || node.position,
-        data: {
-          ...node.data,
-          onEdit: handleEdit,
-          onAddChild: handleAddChild,
-          onAddSpouse: handleAddSpouse,
-        },
-      })));
-      setEdges(data.edges);
-    };
-
-    updateNodes();
+    setNodes(data.nodes.map(node => ({
+      ...node,
+      position: savedPositions[node.id] || node.position,
+      data: {
+        ...node.data,
+        onEdit: handleEdit,
+        onAddChild: handleAddChild,
+        onAddSpouse: handleAddSpouse,
+      },
+    })));
+    setEdges(data.edges);
   }, [familyMembers, setNodes, setEdges, handleEdit, handleAddChild, handleAddSpouse, loadSavedPositions]);
 
   // Handle node click

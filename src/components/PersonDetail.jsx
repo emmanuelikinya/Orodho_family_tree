@@ -1,75 +1,12 @@
-import { useState } from 'react';
-import { X, Heart, Calendar, Users, User, Upload } from 'lucide-react';
+import { X, Heart, Calendar, Users, User } from 'lucide-react';
 import { formatDate, getSpouseDetails, getParentDetails, getChildrenDetails } from '../utils/familyTreeUtils';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
-
 const PersonDetail = ({ person, familyMembers, onClose }) => {
-  const [uploading, setUploading] = useState(false);
-  const [uploadMessage, setUploadMessage] = useState('');
-  const [selectedFile, setSelectedFile] = useState(null);
-
   if (!person) return null;
 
   const spouses = getSpouseDetails(familyMembers, person);
   const parents = getParentDetails(familyMembers, person);
   const children = getChildrenDetails(familyMembers, person);
-
-  const handleFileSelect = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      // Check file size (5MB limit)
-      if (file.size > 5 * 1024 * 1024) {
-        setUploadMessage('File size must be less than 5MB');
-        return;
-      }
-      // Check file type
-      const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif'];
-      if (!allowedTypes.includes(file.type)) {
-        setUploadMessage('Only JPEG, PNG, and GIF images are allowed');
-        return;
-      }
-      setSelectedFile(file);
-      setUploadMessage('');
-    }
-  };
-
-  const handlePhotoUpload = async () => {
-    if (!selectedFile) {
-      setUploadMessage('Please select a file first');
-      return;
-    }
-
-    setUploading(true);
-    setUploadMessage('Uploading...');
-
-    try {
-      const formData = new FormData();
-      formData.append('photo', selectedFile);
-
-      const response = await fetch(`${API_URL}/upload-photo/${person.id}`, {
-        method: 'POST',
-        body: formData,
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setUploadMessage('Photo uploaded successfully! Please refresh the page to see changes.');
-        setSelectedFile(null);
-        // Reset file input
-        const fileInput = document.getElementById('photo-upload');
-        if (fileInput) fileInput.value = '';
-      } else {
-        setUploadMessage(`Error: ${data.error || 'Failed to upload photo'}`);
-      }
-    } catch (error) {
-      console.error('Upload error:', error);
-      setUploadMessage('Failed to upload photo. Make sure the backend server is running.');
-    } finally {
-      setUploading(false);
-    }
-  };
 
   return (
     <div
@@ -150,70 +87,6 @@ const PersonDetail = ({ person, familyMembers, onClose }) => {
           <div style={{ fontSize: '14px', opacity: 0.9 }}>
             {person.isDeceased ? '† Deceased' : 'Living'}
           </div>
-        </div>
-
-        {/* Photo Upload Section */}
-        <div style={{
-          padding: '20px',
-          background: '#f9f9f9',
-          borderBottom: '1px solid #e0e0e0',
-        }}>
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '10px',
-            marginBottom: '10px',
-          }}>
-            <Upload size={18} color="#666" />
-            <h3 style={{ fontSize: '14px', fontWeight: '600', color: '#333', margin: 0 }}>
-              Upload Photo
-            </h3>
-          </div>
-          <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
-            <input
-              id="photo-upload"
-              type="file"
-              accept="image/jpeg,image/jpg,image/png,image/gif"
-              onChange={handleFileSelect}
-              disabled={uploading}
-              style={{
-                fontSize: '13px',
-                padding: '8px',
-                border: '1px solid #ddd',
-                borderRadius: '6px',
-                flex: '1',
-                minWidth: '200px',
-              }}
-            />
-            <button
-              onClick={handlePhotoUpload}
-              disabled={!selectedFile || uploading}
-              style={{
-                padding: '8px 16px',
-                background: !selectedFile || uploading ? '#ccc' : '#4A90E2',
-                color: 'white',
-                border: 'none',
-                borderRadius: '6px',
-                cursor: !selectedFile || uploading ? 'not-allowed' : 'pointer',
-                fontSize: '13px',
-                fontWeight: '500',
-              }}
-            >
-              {uploading ? 'Uploading...' : 'Upload'}
-            </button>
-          </div>
-          {uploadMessage && (
-            <div style={{
-              marginTop: '10px',
-              padding: '8px 12px',
-              background: uploadMessage.includes('successfully') ? '#d4edda' : '#f8d7da',
-              color: uploadMessage.includes('successfully') ? '#155724' : '#721c24',
-              borderRadius: '6px',
-              fontSize: '12px',
-            }}>
-              {uploadMessage}
-            </div>
-          )}
         </div>
 
         {/* Content */}
