@@ -922,9 +922,16 @@
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
-      "description": "First child of Nicodemus Ongeso and Herrimah Ongeso.",
+      "description": "First child of Nicodemus Ongeso and Herrimah Ongeso. Father of 2 children.",
       "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "wife-of-jimmy-ongeso",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["nick-ongeso", "herrimah-ongeso-jr"]
+        }
+      ]
     },
     {
       "id": "susan-ongeso",
@@ -935,9 +942,16 @@
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
-      "description": "Second child of Nicodemus Ongeso and Herrimah Ongeso.",
+      "description": "Second child of Nicodemus Ongeso and Herrimah Ongeso. Mother of 3 children.",
       "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "husband-of-susan-ongeso",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["rhema-ongeso", "eddie-ongeso", "elohe-ongeso"]
+        }
+      ]
     },
     {
       "id": "rachael-ongeso",
@@ -948,9 +962,16 @@
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
-      "description": "Third child of Nicodemus Ongeso and Herrimah Ongeso.",
+      "description": "Third child of Nicodemus Ongeso and Herrimah Ongeso. Mother of 2 sons.",
       "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "husband-of-rachael-ongeso",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["samwel-ongeso", "emmanuel-ongeso"]
+        }
+      ]
     },
     {
       "id": "abigail-ongeso",
@@ -1430,6 +1451,193 @@
       "photo": "/photos/placeholder-male.jpg",
       "description": "Sixth child of John Aluko and Jane Aluko Orodho.",
       "parents": ["john-aluko-orodho", "jane-aluko-orodho"],
+      "spouses": []
+    },
+    {
+      "id": "wife-of-jimmy-ongeso",
+      "name": "Wife of Jimmy",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Wife of Jimmy Ongeso. Mother of Nick and Herrimah.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "jimmy-ongeso",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["nick-ongeso", "herrimah-ongeso-jr"]
+        }
+      ]
+    },
+    {
+      "id": "nick-ongeso",
+      "name": "Nick Ongeso",
+      "memberId": "D04",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "First child of Jimmy Ongeso.",
+      "parents": ["jimmy-ongeso", "wife-of-jimmy-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "herrimah-ongeso-jr",
+      "name": "Herrimah Ongeso",
+      "memberId": "D05",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Second child of Jimmy Ongeso.",
+      "parents": ["jimmy-ongeso", "wife-of-jimmy-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "husband-of-susan-ongeso",
+      "name": "Husband of Susan",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Husband of Susan Ongeso. Father of Rhema, Eddie, and Elohe.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "susan-ongeso",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["rhema-ongeso", "eddie-ongeso", "elohe-ongeso"]
+        }
+      ]
+    },
+    {
+      "id": "rhema-ongeso",
+      "name": "Rhema",
+      "memberId": "D06",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "First child of Susan Ongeso. Mother of Caisey.",
+      "parents": ["susan-ongeso", "husband-of-susan-ongeso"],
+      "spouses": [
+        {
+          "spouseId": "husband-of-rhema",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["caisey-ongeso"]
+        }
+      ]
+    },
+    {
+      "id": "eddie-ongeso",
+      "name": "Eddie",
+      "memberId": "D07",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Second child of Susan Ongeso.",
+      "parents": ["susan-ongeso", "husband-of-susan-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "elohe-ongeso",
+      "name": "Elohe",
+      "memberId": "D08",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Third child of Susan Ongeso.",
+      "parents": ["susan-ongeso", "husband-of-susan-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "husband-of-rachael-ongeso",
+      "name": "Husband of Rachael",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Husband of Rachael Ongeso. Father of Samwel and Emmanuel.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "rachael-ongeso",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["samwel-ongeso", "emmanuel-ongeso"]
+        }
+      ]
+    },
+    {
+      "id": "samwel-ongeso",
+      "name": "Samwel",
+      "memberId": "D09",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "First son of Rachael Ongeso.",
+      "parents": ["rachael-ongeso", "husband-of-rachael-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "emmanuel-ongeso",
+      "name": "Emmanuel",
+      "memberId": "D10",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Second son of Rachael Ongeso.",
+      "parents": ["rachael-ongeso", "husband-of-rachael-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "husband-of-rhema",
+      "name": "Husband of Rhema",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Husband of Rhema. Father of Caisey.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "rhema-ongeso",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["caisey-ongeso"]
+        }
+      ]
+    },
+    {
+      "id": "caisey-ongeso",
+      "name": "Caisey",
+      "memberId": "E01",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Daughter of Rhema. First member of Generation E.",
+      "parents": ["rhema-ongeso", "husband-of-rhema"],
       "spouses": []
     }
   ]
