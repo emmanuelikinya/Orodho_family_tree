@@ -747,7 +747,7 @@
           "spouseId": "jane-aluko-orodho",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": []
+          "children": ["susan-aluko", "diana-beldinah-aluko", "ezekiel-aluko", "lily-aluko", "winnie-aluko", "shadrack-odongo-aluko"]
         },
         {
           "spouseId": "loise-aluko-orodho",
@@ -1324,14 +1324,14 @@
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
-      "description": "First wife of John Aluko Orodho.",
+      "description": "First wife of John Aluko Orodho. Mother of 6 children.",
       "parents": [],
       "spouses": [
         {
           "spouseId": "john-aluko-orodho",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": []
+          "children": ["susan-aluko", "diana-beldinah-aluko", "ezekiel-aluko", "lily-aluko", "winnie-aluko", "shadrack-odongo-aluko"]
         }
       ]
     },
@@ -1353,6 +1353,84 @@
           "children": []
         }
       ]
+    },
+    {
+      "id": "susan-aluko",
+      "name": "Susan",
+      "memberId": "C47",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "First child of John Aluko and Jane Aluko Orodho.",
+      "parents": ["john-aluko-orodho", "jane-aluko-orodho"],
+      "spouses": []
+    },
+    {
+      "id": "diana-beldinah-aluko",
+      "name": "Diana Beldinah",
+      "memberId": "C48",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Second child of John Aluko and Jane Aluko Orodho.",
+      "parents": ["john-aluko-orodho", "jane-aluko-orodho"],
+      "spouses": []
+    },
+    {
+      "id": "ezekiel-aluko",
+      "name": "Ezekiel",
+      "memberId": "C49",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Third child of John Aluko and Jane Aluko Orodho.",
+      "parents": ["john-aluko-orodho", "jane-aluko-orodho"],
+      "spouses": []
+    },
+    {
+      "id": "lily-aluko",
+      "name": "Lily",
+      "memberId": "C50",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Fourth child of John Aluko and Jane Aluko Orodho.",
+      "parents": ["john-aluko-orodho", "jane-aluko-orodho"],
+      "spouses": []
+    },
+    {
+      "id": "winnie-aluko",
+      "name": "Winnie",
+      "memberId": "C51",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Fifth child of John Aluko and Jane Aluko Orodho.",
+      "parents": ["john-aluko-orodho", "jane-aluko-orodho"],
+      "spouses": []
+    },
+    {
+      "id": "shadrack-odongo-aluko",
+      "name": "Shadrack Odongo",
+      "memberId": "C52",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Sixth child of John Aluko and Jane Aluko Orodho.",
+      "parents": ["john-aluko-orodho", "jane-aluko-orodho"],
+      "spouses": []
     }
   ]
 }
