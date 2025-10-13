@@ -603,17 +603,43 @@
       "spouses": []
     },
     {
+      "id": "herrimah-ongeso",
+      "name": "Herrimah Ongeso",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Herrimah Ongeso, wife of Nicodemus Ongeso. Deceased. Mother of 8 children.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "nicodemus-ongeso",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["jimmy-ongeso", "susan-ongeso", "rachael-ongeso", "abigail-ongeso", "jorum-ongeso", "bilha-ongeso", "sophie-ongeso", "abednego-ongeso"]
+        }
+      ]
+    },
+    {
       "id": "nicodemus-ongeso",
       "name": "Nicodemus Ongeso",
       "memberId": "B05",
       "gender": "male",
       "birthDate": null,
       "deathDate": null,
-      "isDeceased": false,
+      "isDeceased": true,
       "photo": "/photos/placeholder-male.jpg",
-      "description": "Fifth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho.",
+      "description": "Fifth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Deceased. Married to Herrimah Ongeso (deceased). Father of 8 children.",
       "parents": ["ezekiel-orodho", "beldinah-indieka"],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "herrimah-ongeso",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["jimmy-ongeso", "susan-ongeso", "rachael-ongeso", "abigail-ongeso", "jorum-ongeso", "bilha-ongeso", "sophie-ongeso", "abednego-ongeso"]
+        }
+      ]
     },
     {
       "id": "jael-etaliah",
@@ -795,6 +821,110 @@
       "photo": "/photos/placeholder-male.jpg",
       "description": "Seventh child of Alexander Opiyo.",
       "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "spouses": []
+    },
+    {
+      "id": "jimmy-ongeso",
+      "name": "Jimmy",
+      "memberId": "C23",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "First child of Nicodemus Ongeso and Herrimah Ongeso.",
+      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "susan-ongeso",
+      "name": "Susan",
+      "memberId": "C24",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Second child of Nicodemus Ongeso and Herrimah Ongeso.",
+      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "rachael-ongeso",
+      "name": "Rachael",
+      "memberId": "C25",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Third child of Nicodemus Ongeso and Herrimah Ongeso.",
+      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "abigail-ongeso",
+      "name": "Abigail",
+      "memberId": "C26",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Fourth child of Nicodemus Ongeso and Herrimah Ongeso.",
+      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "jorum-ongeso",
+      "name": "Jorum",
+      "memberId": "C27",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Fifth child of Nicodemus Ongeso and Herrimah Ongeso.",
+      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "bilha-ongeso",
+      "name": "Bilha",
+      "memberId": "C28",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Sixth child of Nicodemus Ongeso and Herrimah Ongeso.",
+      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "sophie-ongeso",
+      "name": "Sophie",
+      "memberId": "C29",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Seventh child of Nicodemus Ongeso and Herrimah Ongeso.",
+      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "abednego-ongeso",
+      "name": "Abednego",
+      "memberId": "C30",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Eighth child of Nicodemus Ongeso and Herrimah Ongeso.",
+      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
       "spouses": []
     }
   ]
