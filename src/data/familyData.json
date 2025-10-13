@@ -693,6 +693,25 @@
       ]
     },
     {
+      "id": "jonathan-tunya",
+      "name": "Jonathan Tunya",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Jonathan Tunya, husband of Jael Etaliah. Father of 10 children.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "jael-etaliah",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["abigael-tunya", "amashold-etaliah-tunya", "sophie-tunya", "mwanika-tunya", "inita-tunya", "beldinah-tunya", "ezekiel-tunya", "nicodemus-tunya", "ruben-tunya", "benson-tunya"]
+        }
+      ]
+    },
+    {
       "id": "jael-etaliah",
       "name": "Jael Etaliah",
       "memberId": "B06",
@@ -701,9 +720,16 @@
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
-      "description": "Sixth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. The only daughter among 7 children.",
+      "description": "Sixth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. The only daughter among 7 children. Married to Jonathan Tunya. Mother of 10 children.",
       "parents": ["ezekiel-orodho", "beldinah-indieka"],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "jonathan-tunya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["abigael-tunya", "amashold-etaliah-tunya", "sophie-tunya", "mwanika-tunya", "inita-tunya", "beldinah-tunya", "ezekiel-tunya", "nicodemus-tunya", "ruben-tunya", "benson-tunya"]
+        }
+      ]
     },
     {
       "id": "john-aluko-orodho",
@@ -1093,6 +1119,188 @@
       "photo": "/photos/placeholder-male.jpg",
       "description": "Son of Nelson. Currently in Grade 6.",
       "parents": ["nelson-bwonya", "wife-of-nelson-bwonya"],
+      "spouses": []
+    },
+    {
+      "id": "abigael-tunya",
+      "name": "Abigael",
+      "memberId": "C37",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "First child of Jael Etaliah and Jonathan Tunya.",
+      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "spouses": []
+    },
+    {
+      "id": "amashold-etaliah-tunya",
+      "name": "Amashold Etaliah",
+      "memberId": "C38",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Second child of Jael Etaliah and Jonathan Tunya. Married to Lillian Ondari.",
+      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "spouses": [
+        {
+          "spouseId": "lillian-ondari",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["transline-ongecha", "lenox-etaliah"]
+        }
+      ]
+    },
+    {
+      "id": "sophie-tunya",
+      "name": "Sophie",
+      "memberId": "C39",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Third child of Jael Etaliah and Jonathan Tunya.",
+      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "spouses": []
+    },
+    {
+      "id": "mwanika-tunya",
+      "name": "Mwanika",
+      "memberId": "C40",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Fourth child of Jael Etaliah and Jonathan Tunya.",
+      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "spouses": []
+    },
+    {
+      "id": "inita-tunya",
+      "name": "Inita",
+      "memberId": "C41",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Fifth child of Jael Etaliah and Jonathan Tunya.",
+      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "spouses": []
+    },
+    {
+      "id": "beldinah-tunya",
+      "name": "Beldinah",
+      "memberId": "C42",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Sixth child of Jael Etaliah and Jonathan Tunya.",
+      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "spouses": []
+    },
+    {
+      "id": "ezekiel-tunya",
+      "name": "Ezekiel",
+      "memberId": "C43",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Seventh child of Jael Etaliah and Jonathan Tunya.",
+      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "spouses": []
+    },
+    {
+      "id": "nicodemus-tunya",
+      "name": "Nicodemus",
+      "memberId": "C44",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Eighth child of Jael Etaliah and Jonathan Tunya.",
+      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "spouses": []
+    },
+    {
+      "id": "ruben-tunya",
+      "name": "Ruben",
+      "memberId": "C45",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Ninth child of Jael Etaliah and Jonathan Tunya. Twin with Benson.",
+      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "spouses": []
+    },
+    {
+      "id": "benson-tunya",
+      "name": "Benson",
+      "memberId": "C46",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Tenth child of Jael Etaliah and Jonathan Tunya. Twin with Ruben.",
+      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "spouses": []
+    },
+    {
+      "id": "lillian-ondari",
+      "name": "Lillian Ondari",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Wife of Amashold Etaliah. Mother of Transline and Lenox.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "amashold-etaliah-tunya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["transline-ongecha", "lenox-etaliah"]
+        }
+      ]
+    },
+    {
+      "id": "transline-ongecha",
+      "name": "Transline Ongecha",
+      "memberId": "D02",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "First child of Amashold Etaliah and Lillian Ondari. Currently in Grade 6.",
+      "parents": ["amashold-etaliah-tunya", "lillian-ondari"],
+      "spouses": []
+    },
+    {
+      "id": "lenox-etaliah",
+      "name": "Lenox Etaliah",
+      "memberId": "D03",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Second child of Amashold Etaliah and Lillian Ondari.",
+      "parents": ["amashold-etaliah-tunya", "lillian-ondari"],
       "spouses": []
     }
   ]
