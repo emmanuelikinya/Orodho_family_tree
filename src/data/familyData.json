@@ -443,9 +443,16 @@
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
-      "description": "Daughter of Edward Ohare and Esther.",
+      "description": "Daughter of Edward Ohare and Esther. Mother of 3 children.",
       "parents": ["edward-ohare", "esther-ohare"],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "husband-of-abigael-nyakoa",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["debra-nyakoa", "aron-ohare", "daisy-nyakoa"]
+        }
+      ]
     },
     {
       "id": "peter-ashioya-ohare",
@@ -1638,6 +1645,64 @@
       "photo": "/photos/placeholder-female.jpg",
       "description": "Daughter of Rhema. First member of Generation E.",
       "parents": ["rhema-ongeso", "husband-of-rhema"],
+      "spouses": []
+    },
+    {
+      "id": "husband-of-abigael-nyakoa",
+      "name": "Husband of Abigael",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Husband of Abigael Nyakoa. Father of Debra, Aron, and Daisy.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "abigael-nyakoa",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["debra-nyakoa", "aron-ohare", "daisy-nyakoa"]
+        }
+      ]
+    },
+    {
+      "id": "debra-nyakoa",
+      "name": "Debra",
+      "memberId": "D11",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "First child of Abigael Nyakoa.",
+      "parents": ["abigael-nyakoa", "husband-of-abigael-nyakoa"],
+      "spouses": []
+    },
+    {
+      "id": "aron-ohare",
+      "name": "Aron Ohare",
+      "memberId": "D12",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Second child of Abigael Nyakoa.",
+      "parents": ["abigael-nyakoa", "husband-of-abigael-nyakoa"],
+      "spouses": []
+    },
+    {
+      "id": "daisy-nyakoa",
+      "name": "Daisy",
+      "memberId": "D13",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Third child of Abigael Nyakoa.",
+      "parents": ["abigael-nyakoa", "husband-of-abigael-nyakoa"],
       "spouses": []
     }
   ]
