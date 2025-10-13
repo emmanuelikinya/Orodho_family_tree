@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { X, Heart, Calendar, Users, User, Upload } from 'lucide-react';
 import { formatDate, getSpouseDetails, getParentDetails, getChildrenDetails } from '../utils/familyTreeUtils';
 
-const API_URL = 'http://localhost:3001/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 
 const PersonDetail = ({ person, familyMembers, onClose }) => {
   const [uploading, setUploading] = useState(false);
