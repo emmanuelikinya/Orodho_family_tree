@@ -47,82 +47,148 @@ export const calculateGenerations = (familyMembers) => {
   return generations;
 };
 
-// Transform family data to React Flow nodes and edges with strict matrix/grid layout
+// Transform family data to React Flow nodes and edges with traditional family tree layout
 export const transformToFlowData = (familyMembers) => {
   const nodes = [];
   const edges = [];
   const memberMap = new Map(familyMembers.map(m => [m.id, m]));
+  const positioned = new Set();
 
   // Calculate generation levels for all members
   const generations = calculateGenerations(familyMembers);
 
-  // Group members by generation
-  const generationGroups = new Map();
-  familyMembers.forEach(member => {
-    const level = generations.get(member.id);
-    if (level !== undefined) {
-      if (!generationGroups.has(level)) {
-        generationGroups.set(level, []);
-      }
-      generationGroups.get(level).push(member);
+  // Find root members (those without parents)
+  const roots = familyMembers.filter(member =>
+    !member.parents || member.parents.length === 0
+  );
+
+  const nodeWidth = 250; // Width of each person card
+  const nodeHeight = 200; // Height of each person card
+  const spouseSpacing = 100; // Space between spouses
+  const siblingSpacing = 50; // Space between siblings
+  const generationSpacing = 250; // Vertical space between generations
+
+  // Track positions
+  const nodePositions = new Map();
+
+  // Layout family unit (couple + their children) recursively
+  const layoutFamilyUnit = (personId, startX, startY, generation) => {
+    if (positioned.has(personId)) {
+      return nodePositions.get(personId);
     }
-  });
 
-  const xSpacing = 300; // Horizontal spacing between people
-  const ySpacing = 300; // Vertical spacing between generations
+    const person = memberMap.get(personId);
+    if (!person) return { x: startX, y: startY, width: nodeWidth };
 
-  // Position ALL members generation by generation - simple grid layout
-  const sortedGenerations = Array.from(generationGroups.keys()).sort((a, b) => a - b);
+    let currentX = startX;
+    const currentY = startY + (generation * generationSpacing);
 
-  sortedGenerations.forEach(genLevel => {
-    const members = generationGroups.get(genLevel);
-    const y = genLevel * ySpacing;
+    // Position the person
+    nodePositions.set(personId, { x: currentX, y: currentY });
+    positioned.add(personId);
 
-    // Position all members in this generation horizontally
-    members.forEach((member, index) => {
-      const x = index * xSpacing;
-      nodes.push({
-        id: member.id,
-        type: 'personNode',
-        position: { x, y },
-        data: { ...member },
-      });
+    nodes.push({
+      id: personId,
+      type: 'personNode',
+      position: { x: currentX, y: currentY },
+      data: { ...person },
     });
-  });
 
-  // Create all edges after positioning is complete
-  familyMembers.forEach(member => {
-    if (member.spouses && member.spouses.length > 0) {
-      member.spouses.forEach((spouse, spouseIndex) => {
-        // Create marriage edge
-        if (memberMap.has(spouse.spouseId)) {
+    // Track rightmost position
+    let rightmostX = currentX + nodeWidth;
+
+    // Handle spouses - position them to the right of the person
+    if (person.spouses && person.spouses.length > 0) {
+      person.spouses.forEach((spouse, spouseIndex) => {
+        if (memberMap.has(spouse.spouseId) && !positioned.has(spouse.spouseId)) {
+          const spouseX = rightmostX + spouseSpacing;
+          const spouseY = currentY; // Same generation level
+
+          nodePositions.set(spouse.spouseId, { x: spouseX, y: spouseY });
+          positioned.add(spouse.spouseId);
+
+          nodes.push({
+            id: spouse.spouseId,
+            type: 'personNode',
+            position: { x: spouseX, y: spouseY },
+            data: { ...memberMap.get(spouse.spouseId) },
+          });
+
+          // Create marriage edge
           edges.push({
-            id: `marriage-${member.id}-${spouse.spouseId}`,
-            source: member.id,
+            id: `marriage-${personId}-${spouse.spouseId}`,
+            source: personId,
             target: spouse.spouseId,
             type: 'straight',
             style: { stroke: '#ff69b4', strokeWidth: 2 },
             animated: false,
             label: spouse.marriageDate ? `Married ${new Date(spouse.marriageDate).getFullYear()}` : 'Married',
           });
-        }
 
-        // Create parent-child edges
-        if (spouse.children && spouse.children.length > 0) {
-          spouse.children.forEach((childId) => {
-            if (memberMap.has(childId)) {
-              edges.push({
-                id: `parent-child-${member.id}-${childId}`,
-                source: member.id,
-                target: childId,
-                type: 'smoothstep',
-                style: { stroke: '#000', strokeWidth: 2 },
-                animated: false,
-              });
-            }
-          });
+          rightmostX = spouseX + nodeWidth;
+
+          // Layout children below the couple
+          if (spouse.children && spouse.children.length > 0) {
+            // Calculate total width needed for all children
+            const totalChildrenWidth = (spouse.children.length * nodeWidth) +
+              ((spouse.children.length - 1) * siblingSpacing);
+
+            // Center children under parents
+            const coupleCenter = (currentX + spouseX + nodeWidth) / 2;
+            let childStartX = coupleCenter - (totalChildrenWidth / 2);
+
+            // Position each child
+            spouse.children.forEach((childId, childIndex) => {
+              if (!positioned.has(childId)) {
+                const childX = childStartX + (childIndex * (nodeWidth + siblingSpacing));
+                const childY = currentY + generationSpacing;
+
+                // Recursively layout this child's family
+                layoutFamilyUnit(childId, childX, startY, generation + 1);
+
+                // Create parent-child edges
+                edges.push({
+                  id: `parent-${personId}-${childId}`,
+                  source: personId,
+                  target: childId,
+                  type: 'smoothstep',
+                  style: { stroke: '#666', strokeWidth: 2 },
+                  animated: false,
+                });
+              }
+            });
+          }
         }
       });
+    }
+
+    return { x: currentX, y: currentY, width: rightmostX - currentX };
+  };
+
+  // Start with root members and layout each family tree
+  let currentX = 0;
+  roots.forEach((root, rootIndex) => {
+    if (!positioned.has(root.id)) {
+      const result = layoutFamilyUnit(root.id, currentX, 0, 0);
+      currentX = result.width + result.x + 300; // Add spacing between separate family trees
+    }
+  });
+
+  // Position any remaining unpositioned members (orphaned nodes)
+  familyMembers.forEach((member, index) => {
+    if (!positioned.has(member.id)) {
+      const generation = generations.get(member.id) || 0;
+      const y = generation * generationSpacing;
+      const x = currentX + (index * (nodeWidth + siblingSpacing));
+
+      nodes.push({
+        id: member.id,
+        type: 'personNode',
+        position: { x, y },
+        data: { ...member },
+      });
+
+      positioned.add(member.id);
     }
   });
 
