@@ -590,6 +590,44 @@
       ]
     },
     {
+      "id": "rinna-bwonya",
+      "name": "Rinna Bwonya",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Rinna Bwonya, first wife of Apolo Bwonya. Deceased. Mother of 6 children.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "apolo-bwonya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["susan-bwonya", "jimmy-bwonya", "nelson-bwonya", "ezekiel-bwonya", "richard-bwonya", "rose-beldinah-bwonya"]
+        }
+      ]
+    },
+    {
+      "id": "alucia-bwonya",
+      "name": "Alucia Bwonya",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Alucia Bwonya, second wife of Apolo Bwonya. Living.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "apolo-bwonya",
+          "marriageDate": null,
+          "marriageOrder": 2,
+          "children": []
+        }
+      ]
+    },
+    {
       "id": "apolo-bwonya",
       "name": "Apolo Bwonya",
       "memberId": "B04",
@@ -598,9 +636,22 @@
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
-      "description": "Fourth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho.",
+      "description": "Fourth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Married to Rinna Bwonya (deceased) and Alucia Bwonya (living). Father of 6 children.",
       "parents": ["ezekiel-orodho", "beldinah-indieka"],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "rinna-bwonya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["susan-bwonya", "jimmy-bwonya", "nelson-bwonya", "ezekiel-bwonya", "richard-bwonya", "rose-beldinah-bwonya"]
+        },
+        {
+          "spouseId": "alucia-bwonya",
+          "marriageDate": null,
+          "marriageOrder": 2,
+          "children": []
+        }
+      ]
     },
     {
       "id": "herrimah-ongeso",
@@ -925,6 +976,123 @@
       "photo": "/photos/placeholder-male.jpg",
       "description": "Eighth child of Nicodemus Ongeso and Herrimah Ongeso.",
       "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "spouses": []
+    },
+    {
+      "id": "susan-bwonya",
+      "name": "Susan",
+      "memberId": "C31",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "First child of Apolo Bwonya and Rinna Bwonya.",
+      "parents": ["apolo-bwonya", "rinna-bwonya"],
+      "spouses": []
+    },
+    {
+      "id": "jimmy-bwonya",
+      "name": "Jimmy",
+      "memberId": "C32",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Second child of Apolo Bwonya and Rinna Bwonya.",
+      "parents": ["apolo-bwonya", "rinna-bwonya"],
+      "spouses": []
+    },
+    {
+      "id": "nelson-bwonya",
+      "name": "Nelson",
+      "memberId": "C33",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Third child of Apolo Bwonya and Rinna Bwonya. Father of Asadel Fadhili.",
+      "parents": ["apolo-bwonya", "rinna-bwonya"],
+      "spouses": [
+        {
+          "spouseId": "wife-of-nelson-bwonya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["asadel-fadhili-bwonya"]
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-bwonya",
+      "name": "Ezekiel",
+      "memberId": "C34",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Fourth child of Apolo Bwonya and Rinna Bwonya.",
+      "parents": ["apolo-bwonya", "rinna-bwonya"],
+      "spouses": []
+    },
+    {
+      "id": "richard-bwonya",
+      "name": "Richard",
+      "memberId": "C35",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Fifth child of Apolo Bwonya and Rinna Bwonya.",
+      "parents": ["apolo-bwonya", "rinna-bwonya"],
+      "spouses": []
+    },
+    {
+      "id": "rose-beldinah-bwonya",
+      "name": "Rose Beldinah",
+      "memberId": "C36",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Sixth child of Apolo Bwonya and Rinna Bwonya.",
+      "parents": ["apolo-bwonya", "rinna-bwonya"],
+      "spouses": []
+    },
+    {
+      "id": "wife-of-nelson-bwonya",
+      "name": "Wife of Nelson",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Wife of Nelson. Mother of Asadel Fadhili.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "nelson-bwonya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["asadel-fadhili-bwonya"]
+        }
+      ]
+    },
+    {
+      "id": "asadel-fadhili-bwonya",
+      "name": "Asadel Fadhili",
+      "memberId": "D01",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Son of Nelson. Currently in Grade 6.",
+      "parents": ["nelson-bwonya", "wife-of-nelson-bwonya"],
       "spouses": []
     }
   ]
