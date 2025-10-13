@@ -533,14 +533,14 @@
       "deathDate": null,
       "isDeceased": true,
       "photo": "/photos/placeholder-female.jpg",
-      "description": "Luciana Opiyo, first wife of Alexander Opiyo. Deceased.",
+      "description": "Luciana Opiyo, first wife of Alexander Opiyo. Deceased. Mother of 7 children.",
       "parents": [],
       "spouses": [
         {
           "spouseId": "alexander-opiyo",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": []
+          "children": ["jimmy-opiyo", "susan-opiyo", "diana-beldinah-opiyo", "robert-ezekiel-orodho", "helen-opiyo", "joram-opiyo", "joash-opiyo"]
         }
       ]
     },
@@ -572,14 +572,14 @@
       "deathDate": null,
       "isDeceased": true,
       "photo": "/photos/placeholder-male.jpg",
-      "description": "Third child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Deceased. Married to Luciana Opiyo (deceased) and Esther Opiyo (living).",
+      "description": "Third child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Deceased. Married to Luciana Opiyo (deceased) and Esther Opiyo (living). Father of 7 children.",
       "parents": ["ezekiel-orodho", "beldinah-indieka"],
       "spouses": [
         {
           "spouseId": "luciana-opiyo",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": []
+          "children": ["jimmy-opiyo", "susan-opiyo", "diana-beldinah-opiyo", "robert-ezekiel-orodho", "helen-opiyo", "joram-opiyo", "joash-opiyo"]
         },
         {
           "spouseId": "esther-opiyo",
@@ -704,6 +704,97 @@
       "photo": "/photos/placeholder-male.jpg",
       "description": "Fifth child of Christopher Oyoo.",
       "parents": ["christopher-oyoo", "wife-of-christopher-oyoo"],
+      "spouses": []
+    },
+    {
+      "id": "jimmy-opiyo",
+      "name": "Jimmy",
+      "memberId": "C16",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "First child of Alexander Opiyo.",
+      "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "spouses": []
+    },
+    {
+      "id": "susan-opiyo",
+      "name": "Susan",
+      "memberId": "C17",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Second child of Alexander Opiyo.",
+      "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "spouses": []
+    },
+    {
+      "id": "diana-beldinah-opiyo",
+      "name": "Diana Beldinah",
+      "memberId": "C18",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Third child of Alexander Opiyo.",
+      "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "spouses": []
+    },
+    {
+      "id": "robert-ezekiel-orodho",
+      "name": "Robert Ezekiel Orodho",
+      "memberId": "C19",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Fourth child of Alexander Opiyo.",
+      "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "spouses": []
+    },
+    {
+      "id": "helen-opiyo",
+      "name": "Helen",
+      "memberId": "C20",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Fifth child of Alexander Opiyo.",
+      "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "spouses": []
+    },
+    {
+      "id": "joram-opiyo",
+      "name": "Joram",
+      "memberId": "C21",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Sixth child of Alexander Opiyo.",
+      "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "spouses": []
+    },
+    {
+      "id": "joash-opiyo",
+      "name": "Joash",
+      "memberId": "C22",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Seventh child of Alexander Opiyo.",
+      "parents": ["alexander-opiyo", "luciana-opiyo"],
       "spouses": []
     }
   ]
