@@ -68,12 +68,28 @@ export const transformToFlowData = (familyMembers) => {
   const spouseSpacingXLater = 30; // Horizontal space between husband and wife (generation B+)
   const spouseSpacingY = 120; // Vertical space between multiple wives (stacked with overlap)
   const siblingSpacing = 120; // Space between children within same family
-  const familyUnitSpacing = 1200; // Space between sibling family units (B generation) - increased to prevent overlaps
+  const siblingSpacingMinimal = 50; // Minimal space between siblings with no children
+  const familyUnitSpacing = 1200; // Space between sibling family units (B generation) with children
+  const familyUnitSpacingMinimal = 300; // Space between B generation siblings with no children
   const generationSpacing = 280; // Vertical space between generations
   const generationBThreshold = 7; // Generation level where B starts (Canon Ezekiel's children)
 
   // Track positions
   const nodePositions = new Map();
+
+  // Helper function to check if a person has any children/descendants
+  const hasDescendants = (personId, memberMap) => {
+    const person = memberMap.get(personId);
+    if (!person || !person.spouses) return false;
+
+    let childCount = 0;
+    person.spouses.forEach(spouse => {
+      if (spouse.children && spouse.children.length > 0) {
+        childCount += spouse.children.length;
+      }
+    });
+    return childCount > 0;
+  };
 
   // Helper function to calculate the width needed for a person's entire subtree
   const calculateSubtreeWidth = (personId, generation, memberMap, visited) => {
@@ -104,17 +120,30 @@ export const transformToFlowData = (familyMembers) => {
       });
     }
 
-    // If has children, calculate their total width
+    // If has children, calculate their total width with dynamic spacing
     if (allChildren.length > 0) {
-      const childSpacing = (generation + 1) === generationBThreshold ? familyUnitSpacing : siblingSpacing;
       let childrenTotalWidth = 0;
 
       allChildren.forEach((childId, index) => {
         if (!visited.has(childId)) {
           const childWidth = calculateSubtreeWidth(childId, generation + 1, memberMap, visited);
           childrenTotalWidth += childWidth;
+
+          // Add dynamic spacing based on whether children have descendants
           if (index < allChildren.length - 1) {
-            childrenTotalWidth += childSpacing;
+            const nextChildId = allChildren[index + 1];
+            const thisHasDescendants = hasDescendants(childId, memberMap);
+            const nextHasDescendants = hasDescendants(nextChildId, memberMap);
+
+            let spacing;
+            if ((generation + 1) === generationBThreshold) {
+              // B generation siblings
+              spacing = (thisHasDescendants || nextHasDescendants) ? familyUnitSpacing : familyUnitSpacingMinimal;
+            } else {
+              // Other generation siblings
+              spacing = (thisHasDescendants || nextHasDescendants) ? siblingSpacing : siblingSpacingMinimal;
+            }
+            childrenTotalWidth += spacing;
           }
         }
       });
@@ -206,33 +235,57 @@ export const transformToFlowData = (familyMembers) => {
 
       // Layout all children centered below the person and all spouses
       if (allChildren.length > 0) {
-        // Use appropriate spacing for this generation's children
-        const childSpacing = (generation + 1) === generationBThreshold ? familyUnitSpacing : siblingSpacing;
-
         // Calculate the center point between the person and the rightmost spouse
         const familyCenter = (currentX + rightmostX) / 2;
 
         // Children should be placed below the lowest spouse
         const childrenY = bottommostY + generationSpacing;
 
-        // First pass: calculate actual widths by doing a dry run layout
+        // First pass: calculate actual widths and appropriate spacing for each child
         let childSubtreeWidths = [];
+        let childSpacings = [];
         let tempPositioned = new Set(positioned);
 
-        allChildren.forEach((childId) => {
+        allChildren.forEach((childId, index) => {
           if (!positioned.has(childId)) {
             // Calculate width recursively by measuring subtree
             const childWidth = calculateSubtreeWidth(childId, generation + 1, memberMap, tempPositioned);
             childSubtreeWidths.push(childWidth);
             tempPositioned.add(childId);
+
+            // Determine spacing based on whether this child and next child have descendants
+            if (index < allChildren.length - 1) {
+              const nextChildId = allChildren[index + 1];
+              const thisHasDescendants = hasDescendants(childId, memberMap);
+              const nextHasDescendants = hasDescendants(nextChildId, memberMap);
+
+              // Dynamic spacing based on generation and whether children have descendants
+              let spacing;
+              if ((generation + 1) === generationBThreshold) {
+                // B generation siblings
+                if (thisHasDescendants || nextHasDescendants) {
+                  spacing = familyUnitSpacing; // Full spacing if either has children
+                } else {
+                  spacing = familyUnitSpacingMinimal; // Minimal spacing if both have no children
+                }
+              } else {
+                // Other generation siblings
+                if (thisHasDescendants || nextHasDescendants) {
+                  spacing = siblingSpacing; // Normal spacing if either has children
+                } else {
+                  spacing = siblingSpacingMinimal; // Minimal spacing if both have no children
+                }
+              }
+              childSpacings.push(spacing);
+            }
           } else {
             childSubtreeWidths.push(0);
           }
         });
 
-        // Calculate total width needed
+        // Calculate total width needed with dynamic spacing
         let totalChildrenWidth = childSubtreeWidths.reduce((sum, width) => sum + width, 0);
-        totalChildrenWidth += (allChildren.filter((childId) => !positioned.has(childId)).length - 1) * childSpacing;
+        totalChildrenWidth += childSpacings.reduce((sum, spacing) => sum + spacing, 0);
 
         // For early generations (ancestors before Canon Ezekiel), keep them vertically aligned
         // Only center children under parents from generation B onwards
@@ -255,11 +308,13 @@ export const transformToFlowData = (familyMembers) => {
             // Update rightmost position using actual layout result
             if (childResult && childResult.rightmostX) {
               rightmostX = Math.max(rightmostX, childResult.rightmostX);
-              // Use the larger of calculated width or actual width, plus spacing
+              // Use the larger of calculated width or actual width, plus dynamic spacing
               const actualWidth = childResult.rightmostX - childCurrentX;
-              childCurrentX = childResult.rightmostX + childSpacing;
+              const spacing = childSpacings[childIndex] || 0;
+              childCurrentX = childResult.rightmostX + spacing;
             } else {
-              childCurrentX += childSubtreeWidths[childIndex] + childSpacing;
+              const spacing = childSpacings[childIndex] || 0;
+              childCurrentX += childSubtreeWidths[childIndex] + spacing;
             }
 
             // Create parent-child edge from the main person (father/mother)
