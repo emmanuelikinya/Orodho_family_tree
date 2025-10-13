@@ -9,3 +9,7 @@
 
 [build.environment]
   NODE_VERSION = "18"
+
+# Note: This is a static deployment
+# Backend features (photo upload, position sync) are disabled
+# Photos are served statically from public/photos folder
