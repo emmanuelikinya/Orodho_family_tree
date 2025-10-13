@@ -234,8 +234,16 @@ export const transformToFlowData = (familyMembers) => {
         let totalChildrenWidth = childSubtreeWidths.reduce((sum, width) => sum + width, 0);
         totalChildrenWidth += (allChildren.filter((childId) => !positioned.has(childId)).length - 1) * childSpacing;
 
-        // Start from the left edge to center children under parents
-        let childStartX = familyCenter - (totalChildrenWidth / 2);
+        // For early generations (ancestors before Canon Ezekiel), keep them vertically aligned
+        // Only center children under parents from generation B onwards
+        let childStartX;
+        if (generation < generationBThreshold - 1) {
+          // Early generations: position children starting from parent's X position (keep ancestors vertically aligned)
+          childStartX = currentX;
+        } else {
+          // Later generations: center children under parents
+          childStartX = familyCenter - (totalChildrenWidth / 2);
+        }
 
         // Position each child and track rightmost position
         let childCurrentX = childStartX;
@@ -270,12 +278,15 @@ export const transformToFlowData = (familyMembers) => {
   };
 
   // Start with root members and layout each family tree
-  let currentX = 0;
+  // Use a fixed starting position for the ancestral line to keep them vertically aligned
+  let currentX = 100; // Fixed starting X position for ancestors
   roots.forEach((root, rootIndex) => {
     if (!positioned.has(root.id)) {
       const result = layoutFamilyUnit(root.id, currentX, 0, 0);
-      // Use rightmostX if available, otherwise fallback to calculated width
-      currentX = (result.rightmostX || (result.x + result.width)) + 300; // Add spacing between separate family trees
+      // For multiple root trees, add spacing
+      if (rootIndex < roots.length - 1) {
+        currentX = (result.rightmostX || (result.x + result.width)) + 300;
+      }
     }
   });
 
