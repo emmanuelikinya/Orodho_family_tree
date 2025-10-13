@@ -64,10 +64,12 @@ export const transformToFlowData = (familyMembers) => {
 
   const nodeWidth = 250; // Width of each person card
   const nodeHeight = 200; // Height of each person card
-  const spouseSpacingX = 100; // Horizontal space between husband and wife
+  const spouseSpacingXEarly = 100; // Horizontal space between husband and wife (early generations)
+  const spouseSpacingXLater = 30; // Horizontal space between husband and wife (generation B+)
   const spouseSpacingY = 50; // Vertical space between multiple wives (stacked)
   const siblingSpacing = 150; // Space between sibling family units
   const generationSpacing = 250; // Vertical space between generations
+  const generationBThreshold = 7; // Generation level where B starts (Canon Ezekiel's children)
 
   // Track positions
   const nodePositions = new Map();
@@ -105,6 +107,8 @@ export const transformToFlowData = (familyMembers) => {
 
     // Handle spouses - stack them vertically to the right of the person
     if (person.spouses && person.spouses.length > 0) {
+      // Use smaller spacing for generation B and onwards
+      const spouseSpacingX = generation >= generationBThreshold ? spouseSpacingXLater : spouseSpacingXEarly;
       const spouseX = currentX + nodeWidth + spouseSpacingX;
 
       person.spouses.forEach((spouse, spouseIndex) => {
@@ -162,8 +166,11 @@ export const transformToFlowData = (familyMembers) => {
             let childWidth = nodeWidth;
 
             // If child has spouse(s), add their width
+            // Use appropriate spacing based on child's generation
+            const childGeneration = generation + 1;
+            const childSpouseSpacing = childGeneration >= generationBThreshold ? spouseSpacingXLater : spouseSpacingXEarly;
             if (childMember && childMember.spouses && childMember.spouses.length > 0) {
-              childWidth += spouseSpacingX + nodeWidth;
+              childWidth += childSpouseSpacing + nodeWidth;
             }
 
             // If child has children, they need more space
