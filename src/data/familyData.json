@@ -487,6 +487,25 @@
       "spouses": []
     },
     {
+      "id": "wife-of-christopher-oyoo",
+      "name": "Wife of Christopher Oyoo",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Wife of Christopher Oyoo. Mother of Maina, Ayemba, Shadrack Odongo, Ibrahim, and Jeremiah Ogongo.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "christopher-oyoo",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["maina-oyoo", "ayemba-oyoo", "shadrack-odongo-oyoo", "ibrahim-oyoo", "jeremiah-ogongo-oyoo"]
+        }
+      ]
+    },
+    {
       "id": "christopher-oyoo",
       "name": "Christopher Oyoo",
       "memberId": "B02",
@@ -495,9 +514,16 @@
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
-      "description": "Second child of Canon Ezekiel Orodho and Beldinah Indieka Orodho.",
+      "description": "Second child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Father of 5 children.",
       "parents": ["ezekiel-orodho", "beldinah-indieka"],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "wife-of-christopher-oyoo",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["maina-oyoo", "ayemba-oyoo", "shadrack-odongo-oyoo", "ibrahim-oyoo", "jeremiah-ogongo-oyoo"]
+        }
+      ]
     },
     {
       "id": "alexander-opiyo",
@@ -562,6 +588,71 @@
       "photo": "/photos/placeholder-male.jpg",
       "description": "Seventh child of Canon Ezekiel Orodho and Beldinah Indieka Orodho.",
       "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "spouses": []
+    },
+    {
+      "id": "maina-oyoo",
+      "name": "Maina",
+      "memberId": "C11",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "First child of Christopher Oyoo. Born in transit (Maina means born in transit).",
+      "parents": ["christopher-oyoo", "wife-of-christopher-oyoo"],
+      "spouses": []
+    },
+    {
+      "id": "ayemba-oyoo",
+      "name": "Ayemba",
+      "memberId": "C12",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Second child of Christopher Oyoo. Daughter.",
+      "parents": ["christopher-oyoo", "wife-of-christopher-oyoo"],
+      "spouses": []
+    },
+    {
+      "id": "shadrack-odongo-oyoo",
+      "name": "Shadrack Odongo",
+      "memberId": "C13",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Third child of Christopher Oyoo.",
+      "parents": ["christopher-oyoo", "wife-of-christopher-oyoo"],
+      "spouses": []
+    },
+    {
+      "id": "ibrahim-oyoo",
+      "name": "Ibrahim",
+      "memberId": "C14",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Fourth child of Christopher Oyoo.",
+      "parents": ["christopher-oyoo", "wife-of-christopher-oyoo"],
+      "spouses": []
+    },
+    {
+      "id": "jeremiah-ogongo-oyoo",
+      "name": "Jeremiah Ogongo",
+      "memberId": "C15",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Fifth child of Christopher Oyoo.",
+      "parents": ["christopher-oyoo", "wife-of-christopher-oyoo"],
       "spouses": []
     }
   ]
