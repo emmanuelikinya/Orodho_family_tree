@@ -740,9 +740,22 @@
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
-      "description": "Seventh child of Canon Ezekiel Orodho and Beldinah Indieka Orodho.",
+      "description": "Seventh child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Married to Jane Aluko Orodho and Loise Aluko Orodho.",
       "parents": ["ezekiel-orodho", "beldinah-indieka"],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "jane-aluko-orodho",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        },
+        {
+          "spouseId": "loise-aluko-orodho",
+          "marriageDate": null,
+          "marriageOrder": 2,
+          "children": []
+        }
+      ]
     },
     {
       "id": "maina-oyoo",
@@ -1302,6 +1315,44 @@
       "description": "Second child of Amashold Etaliah and Lillian Ondari.",
       "parents": ["amashold-etaliah-tunya", "lillian-ondari"],
       "spouses": []
+    },
+    {
+      "id": "jane-aluko-orodho",
+      "name": "Jane Aluko Orodho",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "First wife of John Aluko Orodho.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "john-aluko-orodho",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "loise-aluko-orodho",
+      "name": "Loise Aluko Orodho",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Second wife of John Aluko Orodho.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "john-aluko-orodho",
+          "marriageDate": null,
+          "marriageOrder": 2,
+          "children": []
+        }
+      ]
     }
   ]
 }
