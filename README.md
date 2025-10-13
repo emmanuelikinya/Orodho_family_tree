@@ -12,6 +12,7 @@ An interactive web-based family tree application for the Orodho family, designed
 - **Gender-Based Styling**: Different colors for male and female family members
 - **Relationship Mapping**: Clear visualization of marriages, parent-child relationships
 - **Detailed Information**: Birth dates, death dates, descriptions, and more
+- **Cross-Browser Position Sync**: Move family member cards and positions sync across all browsers and devices in real-time
 
 ## Prerequisites
 
@@ -34,19 +35,26 @@ Open a terminal/command prompt in the project folder and run:
 
 ```bash
 npm install
+npm run install:backend
 ```
 
-This will install all the necessary dependencies.
+This will install all the necessary dependencies for both frontend and backend.
 
 ### 2. Running the Application
 
-To start the development server, run:
+To start both the frontend and backend servers, run:
 
 ```bash
 npm run dev
 ```
 
-The application will open in your browser at `http://localhost:5173` (or another port if 5173 is busy).
+This will start:
+- **Frontend**: http://localhost:5173 (Vite dev server)
+- **Backend**: http://localhost:3001 (Express API server)
+
+The application will open in your browser at `http://localhost:5173`.
+
+**Note**: Both servers must be running for position synchronization to work across browsers. If you only want to run the frontend without backend, use `npm run dev:frontend`.
 
 ### 3. Building for Production
 
@@ -141,10 +149,31 @@ The built files will be in the `dist` folder.
 }
 ```
 
+## Position Synchronization
+
+The application now includes a backend server that synchronizes node positions across all browsers and devices:
+
+- **Real-time Sync**: When you move a family member card, the position is saved to the server
+- **Cross-Browser**: Open the app in different browsers or devices, and positions will be the same
+- **Persistent**: Positions are saved to a JSON file on the server, surviving server restarts
+- **Automatic Saving**: Positions are automatically saved 500ms after you stop moving a card
+- **Fallback**: If the backend server is not running, positions are saved locally to your browser
+
+### How It Works
+
+1. When you move a card, the position is sent to the backend API
+2. The backend stores all positions in `backend/data/positions.json`
+3. When anyone loads the page, positions are loaded from the server
+4. If the server is unavailable, the app falls back to localStorage
+
 ## Project Structure
 
 ```
 orodho-family-tree/
+├── backend/                 # Backend server
+│   ├── data/               # Position data storage
+│   ├── server.js           # Express API server
+│   └── package.json        # Backend dependencies
 ├── public/
 │   └── photos/              # Store family photos here
 ├── src/
