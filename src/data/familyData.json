@@ -463,9 +463,16 @@
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
-      "description": "Son of Edward Ohare and Esther.",
+      "description": "Son of Edward Ohare and Esther. Father of 3 children.",
       "parents": ["edward-ohare", "esther-ohare"],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "wife-of-peter-ashioya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["eddie-ashioya", "esther-ashioya", "njoki-ashioya"]
+        }
+      ]
     },
     {
       "id": "mary-ohare",
@@ -1703,6 +1710,64 @@
       "photo": "/photos/placeholder-female.jpg",
       "description": "Third child of Abigael Nyakoa.",
       "parents": ["abigael-nyakoa", "husband-of-abigael-nyakoa"],
+      "spouses": []
+    },
+    {
+      "id": "wife-of-peter-ashioya",
+      "name": "Wife of Peter Ashioya",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Wife of Peter Ashioya Ohare. Mother of Eddie, Esther, and Njoki.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "peter-ashioya-ohare",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": ["eddie-ashioya", "esther-ashioya", "njoki-ashioya"]
+        }
+      ]
+    },
+    {
+      "id": "eddie-ashioya",
+      "name": "Eddie Ashioya",
+      "memberId": "D14",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "First child of Peter Ashioya Ohare. Writer of 'The Man Talk' column in Daily Nation newspaper.",
+      "parents": ["peter-ashioya-ohare", "wife-of-peter-ashioya"],
+      "spouses": []
+    },
+    {
+      "id": "esther-ashioya",
+      "name": "Esther Ashioya",
+      "memberId": "D15",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Second child of Peter Ashioya Ohare.",
+      "parents": ["peter-ashioya-ohare", "wife-of-peter-ashioya"],
+      "spouses": []
+    },
+    {
+      "id": "njoki-ashioya",
+      "name": "Njoki",
+      "memberId": "D16",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Third child of Peter Ashioya Ohare.",
+      "parents": ["peter-ashioya-ohare", "wife-of-peter-ashioya"],
       "spouses": []
     }
   ]
