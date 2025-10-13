@@ -526,17 +526,68 @@
       ]
     },
     {
+      "id": "luciana-opiyo",
+      "name": "Luciana Opiyo",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": true,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Luciana Opiyo, first wife of Alexander Opiyo. Deceased.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "alexander-opiyo",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "esther-opiyo",
+      "name": "Esther Opiyo",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Esther Opiyo, second wife of Alexander Opiyo. Living.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "alexander-opiyo",
+          "marriageDate": null,
+          "marriageOrder": 2,
+          "children": []
+        }
+      ]
+    },
+    {
       "id": "alexander-opiyo",
       "name": "Alexander Opiyo",
       "memberId": "B03",
       "gender": "male",
       "birthDate": null,
       "deathDate": null,
-      "isDeceased": false,
+      "isDeceased": true,
       "photo": "/photos/placeholder-male.jpg",
-      "description": "Third child of Canon Ezekiel Orodho and Beldinah Indieka Orodho.",
+      "description": "Third child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Deceased. Married to Luciana Opiyo (deceased) and Esther Opiyo (living).",
       "parents": ["ezekiel-orodho", "beldinah-indieka"],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "luciana-opiyo",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        },
+        {
+          "spouseId": "esther-opiyo",
+          "marriageDate": null,
+          "marriageOrder": 2,
+          "children": []
+        }
+      ]
     },
     {
       "id": "apolo-bwonya",
