@@ -64,7 +64,8 @@ export const transformToFlowData = (familyMembers) => {
 
   const nodeWidth = 250; // Width of each person card
   const nodeHeight = 200; // Height of each person card
-  const spouseSpacing = 100; // Space between spouses
+  const spouseSpacingX = 100; // Horizontal space between husband and wife
+  const spouseSpacingY = 50; // Vertical space between multiple wives (stacked)
   const siblingSpacing = 50; // Space between siblings
   const generationSpacing = 250; // Vertical space between generations
 
@@ -94,15 +95,21 @@ export const transformToFlowData = (familyMembers) => {
       data: { ...person },
     });
 
-    // Track rightmost position
+    // Track rightmost position and bottom-most position
     let rightmostX = currentX + nodeWidth;
+    let bottommostY = currentY;
 
-    // Handle spouses - position them to the right of the person
+    // Collect all children from all marriages
+    const allChildren = [];
+
+    // Handle spouses - stack them vertically to the right of the person
     if (person.spouses && person.spouses.length > 0) {
+      const spouseX = currentX + nodeWidth + spouseSpacingX;
+
       person.spouses.forEach((spouse, spouseIndex) => {
         if (memberMap.has(spouse.spouseId) && !positioned.has(spouse.spouseId)) {
-          const spouseX = rightmostX + spouseSpacing;
-          const spouseY = currentY; // Same generation level
+          // Stack spouses vertically (offset Y for each additional spouse)
+          const spouseY = currentY + (spouseIndex * (nodeHeight + spouseSpacingY));
 
           nodePositions.set(spouse.spouseId, { x: spouseX, y: spouseY });
           positioned.add(spouse.spouseId);
@@ -125,41 +132,54 @@ export const transformToFlowData = (familyMembers) => {
             label: spouse.marriageDate ? `Married ${new Date(spouse.marriageDate).getFullYear()}` : 'Married',
           });
 
-          rightmostX = spouseX + nodeWidth;
+          // Update rightmost and bottommost positions
+          rightmostX = Math.max(rightmostX, spouseX + nodeWidth);
+          bottommostY = Math.max(bottommostY, spouseY);
 
-          // Layout children below the couple
+          // Collect children from this marriage
           if (spouse.children && spouse.children.length > 0) {
-            // Calculate total width needed for all children
-            const totalChildrenWidth = (spouse.children.length * nodeWidth) +
-              ((spouse.children.length - 1) * siblingSpacing);
-
-            // Center children under parents
-            const coupleCenter = (currentX + spouseX + nodeWidth) / 2;
-            let childStartX = coupleCenter - (totalChildrenWidth / 2);
-
-            // Position each child
-            spouse.children.forEach((childId, childIndex) => {
-              if (!positioned.has(childId)) {
-                const childX = childStartX + (childIndex * (nodeWidth + siblingSpacing));
-                const childY = currentY + generationSpacing;
-
-                // Recursively layout this child's family
-                layoutFamilyUnit(childId, childX, startY, generation + 1);
-
-                // Create parent-child edges
-                edges.push({
-                  id: `parent-${personId}-${childId}`,
-                  source: personId,
-                  target: childId,
-                  type: 'smoothstep',
-                  style: { stroke: '#666', strokeWidth: 2 },
-                  animated: false,
-                });
+            spouse.children.forEach((childId) => {
+              if (!allChildren.includes(childId)) {
+                allChildren.push(childId);
               }
             });
           }
         }
       });
+
+      // Layout all children centered below the person and all spouses
+      if (allChildren.length > 0) {
+        // Calculate total width needed for all children
+        const totalChildrenWidth = (allChildren.length * nodeWidth) +
+          ((allChildren.length - 1) * siblingSpacing);
+
+        // Calculate the center point between the person and the rightmost spouse
+        const familyCenter = (currentX + rightmostX) / 2;
+        let childStartX = familyCenter - (totalChildrenWidth / 2);
+
+        // Children should be placed below the lowest spouse
+        const childrenY = bottommostY + generationSpacing;
+
+        // Position each child
+        allChildren.forEach((childId, childIndex) => {
+          if (!positioned.has(childId)) {
+            const childX = childStartX + (childIndex * (nodeWidth + siblingSpacing));
+
+            // Recursively layout this child's family
+            layoutFamilyUnit(childId, childX, startY, generation + 1);
+
+            // Create parent-child edge from the main person (father/mother)
+            edges.push({
+              id: `parent-${personId}-${childId}`,
+              source: personId,
+              target: childId,
+              type: 'smoothstep',
+              style: { stroke: '#666', strokeWidth: 2 },
+              animated: false,
+            });
+          }
+        });
+      }
     }
 
     return { x: currentX, y: currentY, width: rightmostX - currentX };
