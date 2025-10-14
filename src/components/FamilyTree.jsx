@@ -7,7 +7,7 @@ import ReactFlow, {
   useEdgesState,
 } from 'reactflow';
 import 'reactflow/dist/style.css';
-import { Download } from 'lucide-react';
+import { Download, Upload } from 'lucide-react';
 
 import PersonNode from './PersonNode';
 import PersonDetail from './PersonDetail';
@@ -15,6 +15,7 @@ import EditPersonModal from './EditPersonModal';
 import AddChildModal from './AddChildModal';
 import AddSpouseModal from './AddSpouseModal';
 import { transformToFlowData } from '../utils/familyTreeUtils';
+import { saveFamilyDataToGitHub, validateGitHubConfig } from '../utils/githubApi';
 
 const nodeTypes = {
   personNode: PersonNode,
@@ -26,6 +27,8 @@ const FamilyTree = ({ familyMembers: initialFamilyMembers }) => {
   const [editingPerson, setEditingPerson] = useState(null);
   const [addingChildTo, setAddingChildTo] = useState(null);
   const [addingSpouseTo, setAddingSpouseTo] = useState(null);
+  const [isSaving, setIsSaving] = useState(false);
+  const [saveMessage, setSaveMessage] = useState('');
 
   // Callbacks for node actions
   const handleEdit = useCallback((person) => {
@@ -206,16 +209,57 @@ const FamilyTree = ({ familyMembers: initialFamilyMembers }) => {
     setAddingSpouseTo(null);
   }, []);
 
-  // Download updated JSON
-  const handleDownload = useCallback(() => {
-    const dataStr = JSON.stringify({ familyMembers }, null, 2);
-    const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
-    const exportFileDefaultName = 'familyData.json';
+  // Save changes to GitHub or download JSON as fallback
+  const handleSaveChanges = useCallback(async () => {
+    setIsSaving(true);
+    setSaveMessage('');
 
-    const linkElement = document.createElement('a');
-    linkElement.setAttribute('href', dataUri);
-    linkElement.setAttribute('download', exportFileDefaultName);
-    linkElement.click();
+    // Get GitHub configuration from environment variables
+    const githubConfig = {
+      owner: import.meta.env.VITE_GITHUB_OWNER,
+      repo: import.meta.env.VITE_GITHUB_REPO,
+      token: import.meta.env.VITE_GITHUB_TOKEN,
+    };
+
+    // Validate configuration
+    const validation = validateGitHubConfig(githubConfig);
+
+    if (!validation.valid) {
+      // Fallback to download if GitHub not configured
+      console.warn('GitHub not configured, falling back to download:', validation.message);
+
+      const dataStr = JSON.stringify({ familyMembers }, null, 2);
+      const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
+      const exportFileDefaultName = 'familyData.json';
+
+      const linkElement = document.createElement('a');
+      linkElement.setAttribute('href', dataUri);
+      linkElement.setAttribute('download', exportFileDefaultName);
+      linkElement.click();
+
+      setSaveMessage('Downloaded JSON file (GitHub not configured)');
+      setIsSaving(false);
+      setTimeout(() => setSaveMessage(''), 5000);
+      return;
+    }
+
+    // Save to GitHub
+    try {
+      const result = await saveFamilyDataToGitHub(familyMembers, githubConfig);
+
+      if (result.success) {
+        setSaveMessage(result.message);
+        console.log('Commit URL:', result.commitUrl);
+      } else {
+        setSaveMessage(`Error: ${result.message}`);
+      }
+    } catch (error) {
+      console.error('Save error:', error);
+      setSaveMessage('Failed to save changes. Check console for details.');
+    } finally {
+      setIsSaving(false);
+      setTimeout(() => setSaveMessage(''), 8000);
+    }
   }, [familyMembers]);
 
   // Reset node positions to original layout
@@ -310,6 +354,27 @@ const FamilyTree = ({ familyMembers: initialFamilyMembers }) => {
         />
       )}
 
+      {/* Save Status Message */}
+      {saveMessage && (
+        <div
+          style={{
+            position: 'absolute',
+            top: '80px',
+            right: '20px',
+            zIndex: 6,
+            background: saveMessage.includes('Error') || saveMessage.includes('Failed') ? '#f44336' : '#4CAF50',
+            color: 'white',
+            padding: '12px 20px',
+            borderRadius: '8px',
+            boxShadow: '0 2px 8px rgba(0, 0, 0, 0.2)',
+            maxWidth: '400px',
+            fontSize: '14px',
+          }}
+        >
+          {saveMessage}
+        </div>
+      )}
+
       {/* Action Buttons */}
       <div
         style={{
@@ -342,15 +407,16 @@ const FamilyTree = ({ familyMembers: initialFamilyMembers }) => {
           Reset Layout
         </button>
         <button
-          onClick={handleDownload}
-          title="Download updated family data"
+          onClick={handleSaveChanges}
+          disabled={isSaving}
+          title="Save changes to GitHub repository"
           style={{
-            background: '#4CAF50',
+            background: isSaving ? '#999' : '#4CAF50',
             color: 'white',
             border: 'none',
             borderRadius: '8px',
             padding: '12px 20px',
-            cursor: 'pointer',
+            cursor: isSaving ? 'not-allowed' : 'pointer',
             fontSize: '14px',
             fontWeight: '500',
             display: 'flex',
@@ -359,8 +425,8 @@ const FamilyTree = ({ familyMembers: initialFamilyMembers }) => {
             boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
           }}
         >
-          <Download size={18} />
-          Save Changes
+          {isSaving ? <Upload size={18} className="spin" /> : <Download size={18} />}
+          {isSaving ? 'Saving...' : 'Save Changes'}
         </button>
       </div>
 
