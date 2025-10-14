@@ -15,7 +15,9 @@
           "spouseId": "moola",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["makutsa"]
+          "children": [
+            "makutsa"
+          ]
         }
       ]
     },
@@ -34,7 +36,9 @@
           "spouseId": "wife-of-moola",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["makutsa"]
+          "children": [
+            "makutsa"
+          ]
         }
       ]
     },
@@ -53,7 +57,9 @@
           "spouseId": "makutsa",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["aluviri"]
+          "children": [
+            "aluviri"
+          ]
         }
       ]
     },
@@ -66,13 +72,18 @@
       "isDeceased": true,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Son of Moola. Father of Aluviri. Second generation of the Orodho lineage.",
-      "parents": ["moola", "wife-of-moola"],
+      "parents": [
+        "moola",
+        "wife-of-moola"
+      ],
       "spouses": [
         {
           "spouseId": "wife-of-makutsa",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["aluviri"]
+          "children": [
+            "aluviri"
+          ]
         }
       ]
     },
@@ -91,7 +102,9 @@
           "spouseId": "aluviri",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["ashioya"]
+          "children": [
+            "ashioya"
+          ]
         }
       ]
     },
@@ -104,13 +117,18 @@
       "isDeceased": true,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Son of Makutsa. Father of Ashioya. Third generation of the Orodho lineage.",
-      "parents": ["makutsa", "wife-of-makutsa"],
+      "parents": [
+        "makutsa",
+        "wife-of-makutsa"
+      ],
       "spouses": [
         {
           "spouseId": "wife-of-aluviri",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["ashioya"]
+          "children": [
+            "ashioya"
+          ]
         }
       ]
     },
@@ -129,7 +147,9 @@
           "spouseId": "ashioya",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["maare"]
+          "children": [
+            "maare"
+          ]
         }
       ]
     },
@@ -142,13 +162,18 @@
       "isDeceased": true,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Son of Aluviri. Father of Maare. Fourth generation of the Orodho lineage.",
-      "parents": ["aluviri", "wife-of-aluviri"],
+      "parents": [
+        "aluviri",
+        "wife-of-aluviri"
+      ],
       "spouses": [
         {
           "spouseId": "wife-of-ashioya",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["maare"]
+          "children": [
+            "maare"
+          ]
         }
       ]
     },
@@ -167,7 +192,9 @@
           "spouseId": "maare",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["jeremiah-ogongo"]
+          "children": [
+            "jeremiah-ogongo"
+          ]
         }
       ]
     },
@@ -180,13 +207,18 @@
       "isDeceased": true,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Son of Ashioya. Father of Jeremiah Ogongo. Fifth generation of the Orodho lineage.",
-      "parents": ["ashioya", "wife-of-ashioya"],
+      "parents": [
+        "ashioya",
+        "wife-of-ashioya"
+      ],
       "spouses": [
         {
           "spouseId": "wife-of-maare",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["jeremiah-ogongo"]
+          "children": [
+            "jeremiah-ogongo"
+          ]
         }
       ]
     },
@@ -205,7 +237,9 @@
           "spouseId": "jeremiah-ogongo",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["ezekiel-orodho"]
+          "children": [
+            "ezekiel-orodho"
+          ]
         }
       ]
     },
@@ -218,13 +252,18 @@
       "isDeceased": true,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Son of Maare. Husband to Susan Munayi. Father of Canon Ezekiel Orodho.",
-      "parents": ["maare", "wife-of-maare"],
+      "parents": [
+        "maare",
+        "wife-of-maare"
+      ],
       "spouses": [
         {
           "spouseId": "susan-munayi",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["ezekiel-orodho"]
+          "children": [
+            "ezekiel-orodho"
+          ]
         }
       ]
     },
@@ -243,7 +282,15 @@
           "spouseId": "ezekiel-orodho",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["edward-ohare", "christopher-oyoo", "alexander-opiyo", "apolo-bwonya", "nicodemus-ongeso", "jael-etaliah", "john-aluko-orodho"]
+          "children": [
+            "edward-ohare",
+            "christopher-oyoo",
+            "alexander-opiyo",
+            "apolo-bwonya",
+            "nicodemus-ongeso",
+            "jael-etaliah",
+            "john-aluko-orodho"
+          ]
         }
       ]
     },
@@ -257,13 +304,24 @@
       "isDeceased": false,
       "photo": "/photos/canonezekielorodho.png",
       "description": "MAIN CHARACTER. Canon Ezekiel Orodho, son of Jeremiah Ogongo and Susan Munayi. Husband to Beldinah Indieka Orodho. Father of 7 children (6 boys, 1 girl).",
-      "parents": ["jeremiah-ogongo", "susan-munayi"],
+      "parents": [
+        "jeremiah-ogongo",
+        "susan-munayi"
+      ],
       "spouses": [
         {
           "spouseId": "beldinah-indieka",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["edward-ohare", "christopher-oyoo", "alexander-opiyo", "apolo-bwonya", "nicodemus-ongeso", "jael-etaliah", "john-aluko-orodho"]
+          "children": [
+            "edward-ohare",
+            "christopher-oyoo",
+            "alexander-opiyo",
+            "apolo-bwonya",
+            "nicodemus-ongeso",
+            "jael-etaliah",
+            "john-aluko-orodho"
+          ]
         }
       ]
     },
@@ -282,7 +340,12 @@
           "spouseId": "edward-ohare",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["susan-ohare", "jimmy-james-ogongo", "patrick-osimbo", "monica-ohare"]
+          "children": [
+            "susan-ohare",
+            "jimmy-james-ogongo",
+            "patrick-osimbo",
+            "monica-ohare"
+          ]
         }
       ]
     },
@@ -301,7 +364,12 @@
           "spouseId": "edward-ohare",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["joel-mukoya", "joseph-amuli", "abigael-nyakoa", "peter-ashioya-ohare"]
+          "children": [
+            "joel-mukoya",
+            "joseph-amuli",
+            "abigael-nyakoa",
+            "peter-ashioya-ohare"
+          ]
         }
       ]
     },
@@ -320,7 +388,10 @@
           "spouseId": "edward-ohare",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["mary-ohare", "christine-ndunge"]
+          "children": [
+            "mary-ohare",
+            "christine-ndunge"
+          ]
         }
       ]
     },
@@ -334,25 +405,41 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "First child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Married to Agnes, Esther, and Juliana. Father of 10 children.",
-      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "parents": [
+        "ezekiel-orodho",
+        "beldinah-indieka"
+      ],
       "spouses": [
         {
           "spouseId": "agnes-ohare",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["susan-ohare", "jimmy-james-ogongo", "patrick-osimbo", "monica-ohare"]
+          "children": [
+            "susan-ohare",
+            "jimmy-james-ogongo",
+            "patrick-osimbo",
+            "monica-ohare"
+          ]
         },
         {
           "spouseId": "esther-ohare",
           "marriageDate": null,
           "marriageOrder": 2,
-          "children": ["joel-mukoya", "joseph-amuli", "abigael-nyakoa", "peter-ashioya-ohare"]
+          "children": [
+            "joel-mukoya",
+            "joseph-amuli",
+            "abigael-nyakoa",
+            "peter-ashioya-ohare"
+          ]
         },
         {
           "spouseId": "juliana-ohare",
           "marriageDate": null,
           "marriageOrder": 3,
-          "children": ["mary-ohare", "christine-ndunge"]
+          "children": [
+            "mary-ohare",
+            "christine-ndunge"
+          ]
         }
       ]
     },
@@ -366,7 +453,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Daughter of Edward Ohare and Agnes.",
-      "parents": ["edward-ohare", "agnes-ohare"],
+      "parents": [
+        "edward-ohare",
+        "agnes-ohare"
+      ],
       "spouses": []
     },
     {
@@ -379,7 +469,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Son of Edward Ohare and Agnes.",
-      "parents": ["edward-ohare", "agnes-ohare"],
+      "parents": [
+        "edward-ohare",
+        "agnes-ohare"
+      ],
       "spouses": []
     },
     {
@@ -392,7 +485,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Son of Edward Ohare and Agnes.",
-      "parents": ["edward-ohare", "agnes-ohare"],
+      "parents": [
+        "edward-ohare",
+        "agnes-ohare"
+      ],
       "spouses": []
     },
     {
@@ -405,7 +501,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Daughter of Edward Ohare and Agnes.",
-      "parents": ["edward-ohare", "agnes-ohare"],
+      "parents": [
+        "edward-ohare",
+        "agnes-ohare"
+      ],
       "spouses": []
     },
     {
@@ -418,7 +517,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Son of Edward Ohare and Esther.",
-      "parents": ["edward-ohare", "esther-ohare"],
+      "parents": [
+        "edward-ohare",
+        "esther-ohare"
+      ],
       "spouses": []
     },
     {
@@ -431,7 +533,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Son of Edward Ohare and Esther.",
-      "parents": ["edward-ohare", "esther-ohare"],
+      "parents": [
+        "edward-ohare",
+        "esther-ohare"
+      ],
       "spouses": []
     },
     {
@@ -444,13 +549,20 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Daughter of Edward Ohare and Esther. Mother of 3 children.",
-      "parents": ["edward-ohare", "esther-ohare"],
+      "parents": [
+        "edward-ohare",
+        "esther-ohare"
+      ],
       "spouses": [
         {
           "spouseId": "husband-of-abigael-nyakoa",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["debra-nyakoa", "aron-ohare", "daisy-nyakoa"]
+          "children": [
+            "debra-nyakoa",
+            "aron-ohare",
+            "daisy-nyakoa"
+          ]
         }
       ]
     },
@@ -464,13 +576,20 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Son of Edward Ohare and Esther. Father of 3 children.",
-      "parents": ["edward-ohare", "esther-ohare"],
+      "parents": [
+        "edward-ohare",
+        "esther-ohare"
+      ],
       "spouses": [
         {
           "spouseId": "wife-of-peter-ashioya",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["eddie-ashioya", "esther-ashioya", "njoki-ashioya"]
+          "children": [
+            "eddie-ashioya",
+            "esther-ashioya",
+            "njoki-ashioya"
+          ]
         }
       ]
     },
@@ -484,7 +603,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Daughter of Edward Ohare and Juliana. Currently living in the US.",
-      "parents": ["edward-ohare", "juliana-ohare"],
+      "parents": [
+        "edward-ohare",
+        "juliana-ohare"
+      ],
       "spouses": []
     },
     {
@@ -497,7 +619,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Daughter of Edward Ohare and Juliana. Currently living in the US.",
-      "parents": ["edward-ohare", "juliana-ohare"],
+      "parents": [
+        "edward-ohare",
+        "juliana-ohare"
+      ],
       "spouses": []
     },
     {
@@ -515,7 +640,13 @@
           "spouseId": "christopher-oyoo",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["maina-oyoo", "ayemba-oyoo", "shadrack-odongo-oyoo", "ibrahim-oyoo", "jeremiah-ogongo-oyoo"]
+          "children": [
+            "maina-oyoo",
+            "ayemba-oyoo",
+            "shadrack-odongo-oyoo",
+            "ibrahim-oyoo",
+            "jeremiah-ogongo-oyoo"
+          ]
         }
       ]
     },
@@ -529,13 +660,22 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Second child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Father of 5 children.",
-      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "parents": [
+        "ezekiel-orodho",
+        "beldinah-indieka"
+      ],
       "spouses": [
         {
           "spouseId": "wife-of-christopher-oyoo",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["maina-oyoo", "ayemba-oyoo", "shadrack-odongo-oyoo", "ibrahim-oyoo", "jeremiah-ogongo-oyoo"]
+          "children": [
+            "maina-oyoo",
+            "ayemba-oyoo",
+            "shadrack-odongo-oyoo",
+            "ibrahim-oyoo",
+            "jeremiah-ogongo-oyoo"
+          ]
         }
       ]
     },
@@ -554,7 +694,15 @@
           "spouseId": "alexander-opiyo",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["jimmy-opiyo", "susan-opiyo", "diana-beldinah-opiyo", "robert-ezekiel-orodho", "helen-opiyo", "joram-opiyo", "joash-opiyo"]
+          "children": [
+            "jimmy-opiyo",
+            "susan-opiyo",
+            "diana-beldinah-opiyo",
+            "robert-ezekiel-orodho",
+            "helen-opiyo",
+            "joram-opiyo",
+            "joash-opiyo"
+          ]
         }
       ]
     },
@@ -587,13 +735,24 @@
       "isDeceased": true,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Third child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Deceased. Married to Luciana Opiyo (deceased) and Esther Opiyo (living). Father of 7 children.",
-      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "parents": [
+        "ezekiel-orodho",
+        "beldinah-indieka"
+      ],
       "spouses": [
         {
           "spouseId": "luciana-opiyo",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["jimmy-opiyo", "susan-opiyo", "diana-beldinah-opiyo", "robert-ezekiel-orodho", "helen-opiyo", "joram-opiyo", "joash-opiyo"]
+          "children": [
+            "jimmy-opiyo",
+            "susan-opiyo",
+            "diana-beldinah-opiyo",
+            "robert-ezekiel-orodho",
+            "helen-opiyo",
+            "joram-opiyo",
+            "joash-opiyo"
+          ]
         },
         {
           "spouseId": "esther-opiyo",
@@ -618,7 +777,14 @@
           "spouseId": "apolo-bwonya",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["susan-bwonya", "jimmy-bwonya", "nelson-bwonya", "ezekiel-bwonya", "richard-bwonya", "rose-beldinah-bwonya"]
+          "children": [
+            "susan-bwonya",
+            "jimmy-bwonya",
+            "nelson-bwonya",
+            "ezekiel-bwonya",
+            "richard-bwonya",
+            "rose-beldinah-bwonya"
+          ]
         }
       ]
     },
@@ -651,13 +817,23 @@
       "isDeceased": false,
       "photo": "/photos/ApoloBOrodho.png",
       "description": "Fourth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Married to Rinna Bwonya (deceased) and Alucia Bwonya (living). Father of 6 children.",
-      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "parents": [
+        "ezekiel-orodho",
+        "beldinah-indieka"
+      ],
       "spouses": [
         {
           "spouseId": "rinna-bwonya",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["susan-bwonya", "jimmy-bwonya", "nelson-bwonya", "ezekiel-bwonya", "richard-bwonya", "rose-beldinah-bwonya"]
+          "children": [
+            "susan-bwonya",
+            "jimmy-bwonya",
+            "nelson-bwonya",
+            "ezekiel-bwonya",
+            "richard-bwonya",
+            "rose-beldinah-bwonya"
+          ]
         },
         {
           "spouseId": "alucia-bwonya",
@@ -682,7 +858,16 @@
           "spouseId": "nicodemus-ongeso",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["jimmy-ongeso", "susan-ongeso", "rachael-ongeso", "abigail-ongeso", "jorum-ongeso", "bilha-ongeso", "sophie-ongeso", "abednego-ongeso"]
+          "children": [
+            "jimmy-ongeso",
+            "susan-ongeso",
+            "rachael-ongeso",
+            "abigail-ongeso",
+            "jorum-ongeso",
+            "bilha-ongeso",
+            "sophie-ongeso",
+            "abednego-ongeso"
+          ]
         }
       ]
     },
@@ -696,13 +881,25 @@
       "isDeceased": true,
       "photo": "/photos/NicodemusOngeso.png",
       "description": "Fifth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Deceased. Married to Herrimah Ongeso (deceased). Father of 8 children.",
-      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "parents": [
+        "ezekiel-orodho",
+        "beldinah-indieka"
+      ],
       "spouses": [
         {
           "spouseId": "herrimah-ongeso",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["jimmy-ongeso", "susan-ongeso", "rachael-ongeso", "abigail-ongeso", "jorum-ongeso", "bilha-ongeso", "sophie-ongeso", "abednego-ongeso"]
+          "children": [
+            "jimmy-ongeso",
+            "susan-ongeso",
+            "rachael-ongeso",
+            "abigail-ongeso",
+            "jorum-ongeso",
+            "bilha-ongeso",
+            "sophie-ongeso",
+            "abednego-ongeso"
+          ]
         }
       ]
     },
@@ -721,7 +918,18 @@
           "spouseId": "jael-etaliah",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["abigael-tunya", "amashold-etaliah-tunya", "sophie-tunya", "mwanika-tunya", "inita-tunya", "beldinah-tunya", "ezekiel-tunya", "nicodemus-tunya", "ruben-tunya", "benson-tunya"]
+          "children": [
+            "abigael-tunya",
+            "amashold-etaliah-tunya",
+            "sophie-tunya",
+            "mwanika-tunya",
+            "inita-tunya",
+            "beldinah-tunya",
+            "ezekiel-tunya",
+            "nicodemus-tunya",
+            "ruben-tunya",
+            "benson-tunya"
+          ]
         }
       ]
     },
@@ -735,13 +943,27 @@
       "isDeceased": false,
       "photo": "/photos/Jaeletaliah.png",
       "description": "Sixth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. The only daughter among 7 children. Married to Jonathan Tunya. Mother of 10 children.",
-      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "parents": [
+        "ezekiel-orodho",
+        "beldinah-indieka"
+      ],
       "spouses": [
         {
           "spouseId": "jonathan-tunya",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["abigael-tunya", "amashold-etaliah-tunya", "sophie-tunya", "mwanika-tunya", "inita-tunya", "beldinah-tunya", "ezekiel-tunya", "nicodemus-tunya", "ruben-tunya", "benson-tunya"]
+          "children": [
+            "abigael-tunya",
+            "amashold-etaliah-tunya",
+            "sophie-tunya",
+            "mwanika-tunya",
+            "inita-tunya",
+            "beldinah-tunya",
+            "ezekiel-tunya",
+            "nicodemus-tunya",
+            "ruben-tunya",
+            "benson-tunya"
+          ]
         }
       ]
     },
@@ -755,13 +977,23 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Seventh child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. Married to Jane Aluko Orodho and Loise Aluko Orodho.",
-      "parents": ["ezekiel-orodho", "beldinah-indieka"],
+      "parents": [
+        "ezekiel-orodho",
+        "beldinah-indieka"
+      ],
       "spouses": [
         {
           "spouseId": "jane-aluko-orodho",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["susan-aluko", "diana-beldinah-aluko", "ezekiel-aluko", "lily-aluko", "winnie-aluko", "shadrack-odongo-aluko"]
+          "children": [
+            "susan-aluko",
+            "diana-beldinah-aluko",
+            "ezekiel-aluko",
+            "lily-aluko",
+            "winnie-aluko",
+            "shadrack-odongo-aluko"
+          ]
         },
         {
           "spouseId": "loise-aluko-orodho",
@@ -781,7 +1013,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "First child of Christopher Oyoo. Born in transit (Maina means born in transit).",
-      "parents": ["christopher-oyoo", "wife-of-christopher-oyoo"],
+      "parents": [
+        "christopher-oyoo",
+        "wife-of-christopher-oyoo"
+      ],
       "spouses": []
     },
     {
@@ -794,7 +1029,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Second child of Christopher Oyoo. Daughter.",
-      "parents": ["christopher-oyoo", "wife-of-christopher-oyoo"],
+      "parents": [
+        "christopher-oyoo",
+        "wife-of-christopher-oyoo"
+      ],
       "spouses": []
     },
     {
@@ -807,7 +1045,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Third child of Christopher Oyoo.",
-      "parents": ["christopher-oyoo", "wife-of-christopher-oyoo"],
+      "parents": [
+        "christopher-oyoo",
+        "wife-of-christopher-oyoo"
+      ],
       "spouses": []
     },
     {
@@ -820,7 +1061,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Fourth child of Christopher Oyoo.",
-      "parents": ["christopher-oyoo", "wife-of-christopher-oyoo"],
+      "parents": [
+        "christopher-oyoo",
+        "wife-of-christopher-oyoo"
+      ],
       "spouses": []
     },
     {
@@ -833,7 +1077,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Fifth child of Christopher Oyoo.",
-      "parents": ["christopher-oyoo", "wife-of-christopher-oyoo"],
+      "parents": [
+        "christopher-oyoo",
+        "wife-of-christopher-oyoo"
+      ],
       "spouses": []
     },
     {
@@ -846,7 +1093,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "First child of Alexander Opiyo.",
-      "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "parents": [
+        "alexander-opiyo",
+        "luciana-opiyo"
+      ],
       "spouses": []
     },
     {
@@ -859,7 +1109,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Second child of Alexander Opiyo.",
-      "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "parents": [
+        "alexander-opiyo",
+        "luciana-opiyo"
+      ],
       "spouses": []
     },
     {
@@ -872,7 +1125,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Third child of Alexander Opiyo.",
-      "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "parents": [
+        "alexander-opiyo",
+        "luciana-opiyo"
+      ],
       "spouses": []
     },
     {
@@ -885,7 +1141,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Fourth child of Alexander Opiyo.",
-      "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "parents": [
+        "alexander-opiyo",
+        "luciana-opiyo"
+      ],
       "spouses": []
     },
     {
@@ -898,7 +1157,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Fifth child of Alexander Opiyo.",
-      "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "parents": [
+        "alexander-opiyo",
+        "luciana-opiyo"
+      ],
       "spouses": []
     },
     {
@@ -911,7 +1173,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Sixth child of Alexander Opiyo.",
-      "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "parents": [
+        "alexander-opiyo",
+        "luciana-opiyo"
+      ],
       "spouses": []
     },
     {
@@ -924,7 +1189,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Seventh child of Alexander Opiyo.",
-      "parents": ["alexander-opiyo", "luciana-opiyo"],
+      "parents": [
+        "alexander-opiyo",
+        "luciana-opiyo"
+      ],
       "spouses": []
     },
     {
@@ -937,13 +1205,19 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "First child of Nicodemus Ongeso and Herrimah Ongeso. Father of 2 children.",
-      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "parents": [
+        "nicodemus-ongeso",
+        "herrimah-ongeso"
+      ],
       "spouses": [
         {
           "spouseId": "wife-of-jimmy-ongeso",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["nick-ongeso", "herrimah-ongeso-jr"]
+          "children": [
+            "nick-ongeso",
+            "herrimah-ongeso-jr"
+          ]
         }
       ]
     },
@@ -957,13 +1231,20 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Second child of Nicodemus Ongeso and Herrimah Ongeso. Mother of 3 children.",
-      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "parents": [
+        "nicodemus-ongeso",
+        "herrimah-ongeso"
+      ],
       "spouses": [
         {
           "spouseId": "husband-of-susan-ongeso",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["rhema-ongeso", "eddie-ongeso", "elohe-ongeso"]
+          "children": [
+            "rhema-ongeso",
+            "eddie-ongeso",
+            "elohe-ongeso"
+          ]
         }
       ]
     },
@@ -977,13 +1258,19 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Third child of Nicodemus Ongeso and Herrimah Ongeso. Mother of 2 sons.",
-      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "parents": [
+        "nicodemus-ongeso",
+        "herrimah-ongeso"
+      ],
       "spouses": [
         {
           "spouseId": "husband-of-rachael-ongeso",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["samwel-ongeso", "emmanuel-ongeso"]
+          "children": [
+            "samwel-ongeso",
+            "emmanuel-ongeso"
+          ]
         }
       ]
     },
@@ -997,7 +1284,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Fourth child of Nicodemus Ongeso and Herrimah Ongeso.",
-      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "parents": [
+        "nicodemus-ongeso",
+        "herrimah-ongeso"
+      ],
       "spouses": []
     },
     {
@@ -1010,7 +1300,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Fifth child of Nicodemus Ongeso and Herrimah Ongeso.",
-      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "parents": [
+        "nicodemus-ongeso",
+        "herrimah-ongeso"
+      ],
       "spouses": []
     },
     {
@@ -1023,7 +1316,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Sixth child of Nicodemus Ongeso and Herrimah Ongeso.",
-      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "parents": [
+        "nicodemus-ongeso",
+        "herrimah-ongeso"
+      ],
       "spouses": []
     },
     {
@@ -1036,7 +1332,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Seventh child of Nicodemus Ongeso and Herrimah Ongeso.",
-      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "parents": [
+        "nicodemus-ongeso",
+        "herrimah-ongeso"
+      ],
       "spouses": []
     },
     {
@@ -1049,7 +1348,10 @@
       "isDeceased": false,
       "photo": "/photos/AbednegoOngeso.png",
       "description": "Eighth child of Nicodemus Ongeso and Herrimah Ongeso.",
-      "parents": ["nicodemus-ongeso", "herrimah-ongeso"],
+      "parents": [
+        "nicodemus-ongeso",
+        "herrimah-ongeso"
+      ],
       "spouses": []
     },
     {
@@ -1062,7 +1364,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "First child of Apolo Bwonya and Rinna Bwonya.",
-      "parents": ["apolo-bwonya", "rinna-bwonya"],
+      "parents": [
+        "apolo-bwonya",
+        "rinna-bwonya"
+      ],
       "spouses": []
     },
     {
@@ -1075,7 +1380,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Second child of Apolo Bwonya and Rinna Bwonya.",
-      "parents": ["apolo-bwonya", "rinna-bwonya"],
+      "parents": [
+        "apolo-bwonya",
+        "rinna-bwonya"
+      ],
       "spouses": []
     },
     {
@@ -1088,13 +1396,18 @@
       "isDeceased": false,
       "photo": "/photos/NelsonApolo.png",
       "description": "Third child of Apolo Bwonya and Rinna Bwonya. Father of Asadel Fadhili.",
-      "parents": ["apolo-bwonya", "rinna-bwonya"],
+      "parents": [
+        "apolo-bwonya",
+        "rinna-bwonya"
+      ],
       "spouses": [
         {
           "spouseId": "wife-of-nelson-bwonya",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["asadel-fadhili-bwonya"]
+          "children": [
+            "asadel-fadhili-bwonya"
+          ]
         }
       ]
     },
@@ -1108,7 +1421,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Fourth child of Apolo Bwonya and Rinna Bwonya.",
-      "parents": ["apolo-bwonya", "rinna-bwonya"],
+      "parents": [
+        "apolo-bwonya",
+        "rinna-bwonya"
+      ],
       "spouses": []
     },
     {
@@ -1121,7 +1437,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Fifth child of Apolo Bwonya and Rinna Bwonya.",
-      "parents": ["apolo-bwonya", "rinna-bwonya"],
+      "parents": [
+        "apolo-bwonya",
+        "rinna-bwonya"
+      ],
       "spouses": []
     },
     {
@@ -1134,7 +1453,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Sixth child of Apolo Bwonya and Rinna Bwonya.",
-      "parents": ["apolo-bwonya", "rinna-bwonya"],
+      "parents": [
+        "apolo-bwonya",
+        "rinna-bwonya"
+      ],
       "spouses": []
     },
     {
@@ -1152,7 +1474,9 @@
           "spouseId": "nelson-bwonya",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["asadel-fadhili-bwonya"]
+          "children": [
+            "asadel-fadhili-bwonya"
+          ]
         }
       ]
     },
@@ -1166,7 +1490,10 @@
       "isDeceased": false,
       "photo": "/photos/Asadel.png",
       "description": "Son of Nelson. Currently in Grade 6.",
-      "parents": ["nelson-bwonya", "wife-of-nelson-bwonya"],
+      "parents": [
+        "nelson-bwonya",
+        "wife-of-nelson-bwonya"
+      ],
       "spouses": []
     },
     {
@@ -1179,7 +1506,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "First child of Jael Etaliah and Jonathan Tunya.",
-      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "parents": [
+        "jael-etaliah",
+        "jonathan-tunya"
+      ],
       "spouses": []
     },
     {
@@ -1192,13 +1522,19 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Second child of Jael Etaliah and Jonathan Tunya. Married to Lillian Ondari.",
-      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "parents": [
+        "jael-etaliah",
+        "jonathan-tunya"
+      ],
       "spouses": [
         {
           "spouseId": "lillian-ondari",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["transline-ongecha", "lenox-etaliah"]
+          "children": [
+            "transline-ongecha",
+            "lenox-etaliah"
+          ]
         }
       ]
     },
@@ -1212,7 +1548,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Third child of Jael Etaliah and Jonathan Tunya.",
-      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "parents": [
+        "jael-etaliah",
+        "jonathan-tunya"
+      ],
       "spouses": []
     },
     {
@@ -1225,7 +1564,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Fourth child of Jael Etaliah and Jonathan Tunya.",
-      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "parents": [
+        "jael-etaliah",
+        "jonathan-tunya"
+      ],
       "spouses": []
     },
     {
@@ -1238,7 +1580,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Fifth child of Jael Etaliah and Jonathan Tunya.",
-      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "parents": [
+        "jael-etaliah",
+        "jonathan-tunya"
+      ],
       "spouses": []
     },
     {
@@ -1251,7 +1596,10 @@
       "isDeceased": false,
       "photo": "/photos/BeldinahEtaliah.png",
       "description": "Sixth child of Jael Etaliah and Jonathan Tunya.",
-      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "parents": [
+        "jael-etaliah",
+        "jonathan-tunya"
+      ],
       "spouses": []
     },
     {
@@ -1264,7 +1612,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Seventh child of Jael Etaliah and Jonathan Tunya.",
-      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "parents": [
+        "jael-etaliah",
+        "jonathan-tunya"
+      ],
       "spouses": []
     },
     {
@@ -1277,7 +1628,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Eighth child of Jael Etaliah and Jonathan Tunya.",
-      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "parents": [
+        "jael-etaliah",
+        "jonathan-tunya"
+      ],
       "spouses": []
     },
     {
@@ -1290,7 +1644,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Ninth child of Jael Etaliah and Jonathan Tunya. Twin with Benson.",
-      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "parents": [
+        "jael-etaliah",
+        "jonathan-tunya"
+      ],
       "spouses": []
     },
     {
@@ -1303,7 +1660,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Tenth child of Jael Etaliah and Jonathan Tunya. Twin with Ruben.",
-      "parents": ["jael-etaliah", "jonathan-tunya"],
+      "parents": [
+        "jael-etaliah",
+        "jonathan-tunya"
+      ],
       "spouses": []
     },
     {
@@ -1321,7 +1681,10 @@
           "spouseId": "amashold-etaliah-tunya",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["transline-ongecha", "lenox-etaliah"]
+          "children": [
+            "transline-ongecha",
+            "lenox-etaliah"
+          ]
         }
       ]
     },
@@ -1335,7 +1698,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "First child of Amashold Etaliah and Lillian Ondari. Currently in Grade 6.",
-      "parents": ["amashold-etaliah-tunya", "lillian-ondari"],
+      "parents": [
+        "amashold-etaliah-tunya",
+        "lillian-ondari"
+      ],
       "spouses": []
     },
     {
@@ -1348,7 +1714,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Second child of Amashold Etaliah and Lillian Ondari.",
-      "parents": ["amashold-etaliah-tunya", "lillian-ondari"],
+      "parents": [
+        "amashold-etaliah-tunya",
+        "lillian-ondari"
+      ],
       "spouses": []
     },
     {
@@ -1366,7 +1735,14 @@
           "spouseId": "john-aluko-orodho",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["susan-aluko", "diana-beldinah-aluko", "ezekiel-aluko", "lily-aluko", "winnie-aluko", "shadrack-odongo-aluko"]
+          "children": [
+            "susan-aluko",
+            "diana-beldinah-aluko",
+            "ezekiel-aluko",
+            "lily-aluko",
+            "winnie-aluko",
+            "shadrack-odongo-aluko"
+          ]
         }
       ]
     },
@@ -1399,7 +1775,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "First child of John Aluko and Jane Aluko Orodho.",
-      "parents": ["john-aluko-orodho", "jane-aluko-orodho"],
+      "parents": [
+        "john-aluko-orodho",
+        "jane-aluko-orodho"
+      ],
       "spouses": []
     },
     {
@@ -1412,7 +1791,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Second child of John Aluko and Jane Aluko Orodho.",
-      "parents": ["john-aluko-orodho", "jane-aluko-orodho"],
+      "parents": [
+        "john-aluko-orodho",
+        "jane-aluko-orodho"
+      ],
       "spouses": []
     },
     {
@@ -1425,7 +1807,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Third child of John Aluko and Jane Aluko Orodho.",
-      "parents": ["john-aluko-orodho", "jane-aluko-orodho"],
+      "parents": [
+        "john-aluko-orodho",
+        "jane-aluko-orodho"
+      ],
       "spouses": []
     },
     {
@@ -1438,7 +1823,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Fourth child of John Aluko and Jane Aluko Orodho.",
-      "parents": ["john-aluko-orodho", "jane-aluko-orodho"],
+      "parents": [
+        "john-aluko-orodho",
+        "jane-aluko-orodho"
+      ],
       "spouses": []
     },
     {
@@ -1451,7 +1839,10 @@
       "isDeceased": false,
       "photo": "/photos/winnie.png",
       "description": "Fifth child of John Aluko and Jane Aluko Orodho.",
-      "parents": ["john-aluko-orodho", "jane-aluko-orodho"],
+      "parents": [
+        "john-aluko-orodho",
+        "jane-aluko-orodho"
+      ],
       "spouses": []
     },
     {
@@ -1464,7 +1855,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Sixth child of John Aluko and Jane Aluko Orodho.",
-      "parents": ["john-aluko-orodho", "jane-aluko-orodho"],
+      "parents": [
+        "john-aluko-orodho",
+        "jane-aluko-orodho"
+      ],
       "spouses": []
     },
     {
@@ -1482,7 +1876,10 @@
           "spouseId": "jimmy-ongeso",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["nick-ongeso", "herrimah-ongeso-jr"]
+          "children": [
+            "nick-ongeso",
+            "herrimah-ongeso-jr"
+          ]
         }
       ]
     },
@@ -1496,7 +1893,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "First child of Jimmy Ongeso.",
-      "parents": ["jimmy-ongeso", "wife-of-jimmy-ongeso"],
+      "parents": [
+        "jimmy-ongeso",
+        "wife-of-jimmy-ongeso"
+      ],
       "spouses": []
     },
     {
@@ -1509,7 +1909,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Second child of Jimmy Ongeso.",
-      "parents": ["jimmy-ongeso", "wife-of-jimmy-ongeso"],
+      "parents": [
+        "jimmy-ongeso",
+        "wife-of-jimmy-ongeso"
+      ],
       "spouses": []
     },
     {
@@ -1527,27 +1930,36 @@
           "spouseId": "susan-ongeso",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["rhema-ongeso", "eddie-ongeso", "elohe-ongeso"]
+          "children": [
+            "rhema-ongeso",
+            "eddie-ongeso",
+            "elohe-ongeso"
+          ]
         }
       ]
     },
     {
       "id": "rhema-ongeso",
-      "name": "Rhema",
+      "name": "Rhema Perazim",
       "memberId": "D06",
       "gender": "female",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/Rhema.png",
       "description": "First child of Susan Ongeso. Mother of Caisey.",
-      "parents": ["susan-ongeso", "husband-of-susan-ongeso"],
+      "parents": [
+        "susan-ongeso",
+        "husband-of-susan-ongeso"
+      ],
       "spouses": [
         {
           "spouseId": "husband-of-rhema",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["caisey-ongeso"]
+          "children": [
+            "caisey-ongeso"
+          ]
         }
       ]
     },
@@ -1561,7 +1973,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Second child of Susan Ongeso.",
-      "parents": ["susan-ongeso", "husband-of-susan-ongeso"],
+      "parents": [
+        "susan-ongeso",
+        "husband-of-susan-ongeso"
+      ],
       "spouses": []
     },
     {
@@ -1574,7 +1989,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Third child of Susan Ongeso.",
-      "parents": ["susan-ongeso", "husband-of-susan-ongeso"],
+      "parents": [
+        "susan-ongeso",
+        "husband-of-susan-ongeso"
+      ],
       "spouses": []
     },
     {
@@ -1592,7 +2010,10 @@
           "spouseId": "rachael-ongeso",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["samwel-ongeso", "emmanuel-ongeso"]
+          "children": [
+            "samwel-ongeso",
+            "emmanuel-ongeso"
+          ]
         }
       ]
     },
@@ -1606,7 +2027,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "First son of Rachael Ongeso.",
-      "parents": ["rachael-ongeso", "husband-of-rachael-ongeso"],
+      "parents": [
+        "rachael-ongeso",
+        "husband-of-rachael-ongeso"
+      ],
       "spouses": []
     },
     {
@@ -1619,7 +2043,10 @@
       "isDeceased": false,
       "photo": "/photos/Emmanuel.png",
       "description": "Second son of Rachael Ongeso.",
-      "parents": ["rachael-ongeso", "husband-of-rachael-ongeso"],
+      "parents": [
+        "rachael-ongeso",
+        "husband-of-rachael-ongeso"
+      ],
       "spouses": []
     },
     {
@@ -1637,7 +2064,9 @@
           "spouseId": "rhema-ongeso",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["caisey-ongeso"]
+          "children": [
+            "caisey-ongeso"
+          ]
         }
       ]
     },
@@ -1651,7 +2080,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Daughter of Rhema. First member of Generation E.",
-      "parents": ["rhema-ongeso", "husband-of-rhema"],
+      "parents": [
+        "rhema-ongeso",
+        "husband-of-rhema"
+      ],
       "spouses": []
     },
     {
@@ -1669,7 +2101,11 @@
           "spouseId": "abigael-nyakoa",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["debra-nyakoa", "aron-ohare", "daisy-nyakoa"]
+          "children": [
+            "debra-nyakoa",
+            "aron-ohare",
+            "daisy-nyakoa"
+          ]
         }
       ]
     },
@@ -1683,7 +2119,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "First child of Abigael Nyakoa.",
-      "parents": ["abigael-nyakoa", "husband-of-abigael-nyakoa"],
+      "parents": [
+        "abigael-nyakoa",
+        "husband-of-abigael-nyakoa"
+      ],
       "spouses": []
     },
     {
@@ -1696,7 +2135,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Second child of Abigael Nyakoa.",
-      "parents": ["abigael-nyakoa", "husband-of-abigael-nyakoa"],
+      "parents": [
+        "abigael-nyakoa",
+        "husband-of-abigael-nyakoa"
+      ],
       "spouses": []
     },
     {
@@ -1709,7 +2151,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Third child of Abigael Nyakoa.",
-      "parents": ["abigael-nyakoa", "husband-of-abigael-nyakoa"],
+      "parents": [
+        "abigael-nyakoa",
+        "husband-of-abigael-nyakoa"
+      ],
       "spouses": []
     },
     {
@@ -1727,7 +2172,11 @@
           "spouseId": "peter-ashioya-ohare",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": ["eddie-ashioya", "esther-ashioya", "njoki-ashioya"]
+          "children": [
+            "eddie-ashioya",
+            "esther-ashioya",
+            "njoki-ashioya"
+          ]
         }
       ]
     },
@@ -1741,7 +2190,10 @@
       "isDeceased": false,
       "photo": "/photos/EddieAhioya.png",
       "description": "First child of Peter Ashioya Ohare. Writer of 'The Man Talk' column in Daily Nation newspaper.",
-      "parents": ["peter-ashioya-ohare", "wife-of-peter-ashioya"],
+      "parents": [
+        "peter-ashioya-ohare",
+        "wife-of-peter-ashioya"
+      ],
       "spouses": []
     },
     {
@@ -1754,7 +2206,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Second child of Peter Ashioya Ohare.",
-      "parents": ["peter-ashioya-ohare", "wife-of-peter-ashioya"],
+      "parents": [
+        "peter-ashioya-ohare",
+        "wife-of-peter-ashioya"
+      ],
       "spouses": []
     },
     {
@@ -1767,7 +2222,10 @@
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Third child of Peter Ashioya Ohare.",
-      "parents": ["peter-ashioya-ohare", "wife-of-peter-ashioya"],
+      "parents": [
+        "peter-ashioya-ohare",
+        "wife-of-peter-ashioya"
+      ],
       "spouses": []
     }
   ]
