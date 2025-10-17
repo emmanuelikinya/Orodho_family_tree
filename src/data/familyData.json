@@ -1223,13 +1223,13 @@
     },
     {
       "id": "susan-ongeso",
-      "name": "Susan",
+      "name": "Susan Munayi",
       "memberId": "C24",
       "gender": "female",
       "birthDate": null,
       "deathDate": null,
       "isDeceased": false,
-      "photo": "/photos/placeholder-female.jpg",
+      "photo": "/photos/SusanMunayi.png",
       "description": "Second child of Nicodemus Ongeso and Herrimah Ongeso. Mother of 3 children.",
       "parents": [
         "nicodemus-ongeso",
