@@ -493,19 +493,29 @@
     },
     {
       "id": "monica-ohare",
-      "name": "Monica",
+      "name": "Monica Oketch",
       "memberId": "C04",
       "gender": "female",
       "birthDate": null,
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
-      "description": "Daughter of Edward Ohare and Agnes.",
+      "description": "Daughter of Edward Ohare and Agnes. Married to Sam Oketch. Mother of Linda Gwada Oketch and Sandra Atemo Oketch.",
       "parents": [
         "edward-ohare",
         "agnes-ohare"
       ],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "sam-oketch",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": [
+            "linda-gwada-oketch",
+            "sandra-atemo-oketch"
+          ]
+        }
+      ]
     },
     {
       "id": "joel-mukoya",
@@ -2289,6 +2299,60 @@
       "parents": [
         "sophie-ongeso",
         "husband-of-sophie-ongeso"
+      ],
+      "spouses": []
+    },
+    {
+      "id": "sam-oketch",
+      "name": "Sam Oketch",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Husband of Monica Oketch. Father of Linda Gwada Oketch and Sandra Atemo Oketch.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "monica-ohare",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": [
+            "linda-gwada-oketch",
+            "sandra-atemo-oketch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linda-gwada-oketch",
+      "name": "Linda Gwada Oketch",
+      "memberId": "D19",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "First child of Monica Oketch and Sam Oketch.",
+      "parents": [
+        "monica-ohare",
+        "sam-oketch"
+      ],
+      "spouses": []
+    },
+    {
+      "id": "sandra-atemo-oketch",
+      "name": "Sandra Atemo Oketch",
+      "memberId": "D20",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Second child of Monica Oketch and Sam Oketch.",
+      "parents": [
+        "monica-ohare",
+        "sam-oketch"
       ],
       "spouses": []
     }
