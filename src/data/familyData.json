@@ -1331,12 +1331,21 @@
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/Sophie.png",
-      "description": "Seventh child of Nicodemus Ongeso and Herrimah Ongeso.",
+      "description": "Seventh child of Nicodemus Ongeso and Herrimah Ongeso. Mother of Shanice Mayer.",
       "parents": [
         "nicodemus-ongeso",
         "herrimah-ongeso"
       ],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "husband-of-sophie-ongeso",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": [
+            "shanice-mayer"
+          ]
+        }
+      ]
     },
     {
       "id": "abednego-ongeso",
@@ -2225,6 +2234,43 @@
       "parents": [
         "peter-ashioya-ohare",
         "wife-of-peter-ashioya"
+      ],
+      "spouses": []
+    },
+    {
+      "id": "husband-of-sophie-ongeso",
+      "name": "Husband of Sophie Ongeso",
+      "gender": "male",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Husband of Sophie Ongeso. Father of Shanice Mayer.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "sophie-ongeso",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": [
+            "shanice-mayer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shanice-mayer",
+      "name": "Shanice Mayer",
+      "memberId": "D17",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Second born daughter of Sophie Ongeso.",
+      "parents": [
+        "sophie-ongeso",
+        "husband-of-sophie-ongeso"
       ],
       "spouses": []
     }
