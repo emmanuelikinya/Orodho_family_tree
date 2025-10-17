@@ -1331,7 +1331,7 @@
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/Sophie.png",
-      "description": "Seventh child of Nicodemus Ongeso and Herrimah Ongeso. Mother of Shanice Mayer.",
+      "description": "Seventh child of Nicodemus Ongeso and Herrimah Ongeso. Mother of Shanice Meyer and Lyke.",
       "parents": [
         "nicodemus-ongeso",
         "herrimah-ongeso"
@@ -1342,7 +1342,8 @@
           "marriageDate": null,
           "marriageOrder": 1,
           "children": [
-            "shanice-mayer"
+            "shanice-meyer",
+            "lyke-ongeso"
           ]
         }
       ]
@@ -2245,7 +2246,7 @@
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
-      "description": "Husband of Sophie Ongeso. Father of Shanice Mayer.",
+      "description": "Husband of Sophie Ongeso. Father of Shanice Meyer and Lyke.",
       "parents": [],
       "spouses": [
         {
@@ -2253,15 +2254,32 @@
           "marriageDate": null,
           "marriageOrder": 1,
           "children": [
-            "shanice-mayer"
+            "shanice-meyer",
+            "lyke-ongeso"
           ]
         }
       ]
     },
     {
-      "id": "shanice-mayer",
-      "name": "Shanice Mayer",
+      "id": "shanice-meyer",
+      "name": "Shanice Meyer",
       "memberId": "D17",
+      "gender": "female",
+      "birthDate": null,
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "First born daughter of Sophie Ongeso.",
+      "parents": [
+        "sophie-ongeso",
+        "husband-of-sophie-ongeso"
+      ],
+      "spouses": []
+    },
+    {
+      "id": "lyke-ongeso",
+      "name": "Lyke",
+      "memberId": "D18",
       "gender": "female",
       "birthDate": null,
       "deathDate": null,
