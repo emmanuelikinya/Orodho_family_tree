@@ -2111,13 +2111,13 @@
     },
     {
       "id": "debra-nyakoa",
-      "name": "Debra",
+      "name": "Debra Dulo",
       "memberId": "D11",
       "gender": "female",
       "birthDate": null,
       "deathDate": null,
       "isDeceased": false,
-      "photo": "/photos/placeholder-female.jpg",
+      "photo": "/photos/Debradulo.png",
       "description": "First child of Abigael Nyakoa.",
       "parents": [
         "abigael-nyakoa",
