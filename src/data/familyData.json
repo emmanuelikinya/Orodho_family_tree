@@ -1360,19 +1360,30 @@
     },
     {
       "id": "abednego-ongeso",
-      "name": "Abednego",
+      "name": "Abednego Ongeso",
       "memberId": "C30",
       "gender": "male",
-      "birthDate": null,
+      "birthDate": "1980-06-14",
       "deathDate": null,
       "isDeceased": false,
       "photo": "/photos/AbednegoOngeso.png",
-      "description": "Eighth child of Nicodemus Ongeso and Herrimah Ongeso.",
+      "description": "Eighth child of Nicodemus Ongeso and Herrimah Ongeso. Married to Stella Alibiri. Father of Kelly, Kyle, and Kayla.",
       "parents": [
         "nicodemus-ongeso",
         "herrimah-ongeso"
       ],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "stella-alibiri",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": [
+            "kelly-ongeso-alibiri",
+            "kyle-orodho-alibiri",
+            "kayla-herry-alibiri"
+          ]
+        }
+      ]
     },
     {
       "id": "susan-bwonya",
@@ -2353,6 +2364,77 @@
       "parents": [
         "monica-ohare",
         "sam-oketch"
+      ],
+      "spouses": []
+    },
+    {
+      "id": "stella-alibiri",
+      "name": "Stella Alibiri",
+      "gender": "female",
+      "birthDate": "1983-01-03",
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Wife of Abednego Ongeso. Mother of Kelly, Kyle, and Kayla.",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "abednego-ongeso",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": [
+            "kelly-ongeso-alibiri",
+            "kyle-orodho-alibiri",
+            "kayla-herry-alibiri"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kelly-ongeso-alibiri",
+      "name": "Kelly Ongeso Alibiri",
+      "memberId": "D21",
+      "gender": "male",
+      "birthDate": "2009-06-01",
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "First child of Abednego Ongeso and Stella Alibiri.",
+      "parents": [
+        "abednego-ongeso",
+        "stella-alibiri"
+      ],
+      "spouses": []
+    },
+    {
+      "id": "kyle-orodho-alibiri",
+      "name": "Kyle Orodho Alibiri",
+      "memberId": "D22",
+      "gender": "male",
+      "birthDate": "2017-08-21",
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-male.jpg",
+      "description": "Second child of Abednego Ongeso and Stella Alibiri.",
+      "parents": [
+        "abednego-ongeso",
+        "stella-alibiri"
+      ],
+      "spouses": []
+    },
+    {
+      "id": "kayla-herry-alibiri",
+      "name": "Kayla Herry Alibiri",
+      "memberId": "D23",
+      "gender": "female",
+      "birthDate": "2022-09-30",
+      "deathDate": null,
+      "isDeceased": false,
+      "photo": "/photos/placeholder-female.jpg",
+      "description": "Third child of Abednego Ongeso and Stella Alibiri.",
+      "parents": [
+        "abednego-ongeso",
+        "stella-alibiri"
       ],
       "spouses": []
     }
