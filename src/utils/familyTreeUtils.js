@@ -64,14 +64,14 @@ export const transformToFlowData = (familyMembers) => {
 
   const nodeWidth = 250; // Width of each person card
   const nodeHeight = 200; // Height of each person card
-  const spouseSpacingXEarly = 100; // Horizontal space between husband and wife (early generations)
-  const spouseSpacingXLater = 30; // Horizontal space between husband and wife (generation B+)
-  const spouseSpacingY = 120; // Vertical space between multiple wives (stacked with overlap)
-  const siblingSpacing = 120; // Space between children within same family
-  const siblingSpacingMinimal = 50; // Minimal space between siblings with no children
-  const familyUnitSpacing = 1200; // Space between sibling family units (B generation) with children
-  const familyUnitSpacingMinimal = 300; // Space between B generation siblings with no children
-  const generationSpacing = 280; // Vertical space between generations
+  const spouseSpacingXEarly = 120; // Horizontal space between husband and wife (early generations)
+  const spouseSpacingXLater = 50; // Horizontal space between husband and wife (generation B+)
+  const spouseSpacingY = 140; // Vertical space between multiple wives (stacked with overlap)
+  const siblingSpacing = 180; // Space between children within same family
+  const siblingSpacingMinimal = 80; // Minimal space between siblings with no children
+  const familyUnitSpacing = 1500; // Space between sibling family units (B generation) with children
+  const familyUnitSpacingMinimal = 400; // Space between B generation siblings with no children
+  const generationSpacing = 320; // Vertical space between generations
   const generationBThreshold = 7; // Generation level where B starts (Canon Ezekiel's children)
 
   // Track positions
