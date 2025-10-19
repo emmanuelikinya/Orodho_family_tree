@@ -1649,15 +1649,32 @@
         "jael-etaliah",
         "jonathan-tunya"
       ],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "spouse-1760870496315",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": [
+            "person-1760870561085",
+            "person-1760870583551",
+            "person-1760870623435"
+          ]
+        },
+        {
+          "spouseId": "spouse-1760870538103",
+          "marriageDate": null,
+          "marriageOrder": 2,
+          "children": []
+        }
+      ]
     },
     {
       "id": "beldinah-tunya",
-      "name": "Beldinah",
+      "name": "Beldina Alona Tunya",
       "memberId": "C42",
       "gender": "female",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/BeldinahEtaliah.png",
       "description": "Sixth child of Jael Etaliah and Jonathan Tunya.",
@@ -2965,6 +2982,100 @@
       "description": "",
       "parents": [
         "benson-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "person-1760870473554",
+      "name": "Vanglin Kakai",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "inita-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "spouse-1760870496315",
+      "name": "Moses Kakai",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "inita-tunya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        }
+      ],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "spouse-1760870538103",
+      "name": "Moses Kakai",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "inita-tunya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        }
+      ],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760870561085",
+      "name": "Vangline Kakai",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "inita-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760870583551",
+      "name": "Angel Kakai",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "inita-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "person-1760870623435",
+      "name": "Princes Kakai",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "inita-tunya"
       ],
       "spouses": [],
       "photo": "/photos/placeholder-female.jpg"
