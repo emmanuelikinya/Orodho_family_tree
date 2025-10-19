@@ -921,7 +921,7 @@
       "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/JonathanTunya.png",
-      "description": "Jonathan Tunya, husband of Jael Etaliah. Father of 10 children.",
+      "description": "Jonathan Tunya, husband of Jael Etale. Father of 10 children.",
       "parents": [],
       "spouses": [
         {
@@ -945,7 +945,7 @@
     },
     {
       "id": "jael-etaliah",
-      "name": "Jael Priscilla Orodho Etale",
+      "name": "Jael Orodho Etale",
       "memberId": "B06",
       "gender": "female",
       "birthDate": "",
@@ -1583,14 +1583,14 @@
     },
     {
       "id": "sophie-tunya",
-      "name": "Sophie Resi Tunya Obonyo",
+      "name": "Sophie Resi Tunya",
       "memberId": "C39",
       "gender": "female",
       "birthDate": "",
       "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
-      "description": "Third child of Jael Etaliah and Jonathan Tunya.",
+      "description": "Third child of Jael Etale and Jonathan Tunya.",
       "parents": [
         "jael-etaliah",
         "jonathan-tunya"
