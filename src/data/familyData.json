@@ -1286,13 +1286,13 @@
     },
     {
       "id": "abigail-ongeso",
-      "name": "Abigail",
+      "name": "Abigail Ongeso",
       "memberId": "C26",
       "gender": "female",
       "birthDate": null,
       "deathDate": null,
       "isDeceased": false,
-      "photo": "/photos/placeholder-female.jpg",
+      "photo": "/photos/AbigaelOngeso.png",
       "description": "Fourth child of Nicodemus Ongeso and Herrimah Ongeso.",
       "parents": [
         "nicodemus-ongeso",
