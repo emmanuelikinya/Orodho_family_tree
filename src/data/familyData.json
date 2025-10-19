@@ -1725,7 +1725,7 @@
       "name": "Reuben Andeche Tunya",
       "memberId": "C45",
       "gender": "male",
-      "birthDate": "",
+      "birthDate": "1992-08-21",
       "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
@@ -1751,7 +1751,7 @@
       "name": "Benson Ohare Tunya",
       "memberId": "C46",
       "gender": "male",
-      "birthDate": "",
+      "birthDate": "1992-08-21",
       "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
@@ -1760,7 +1760,18 @@
         "jael-etaliah",
         "jonathan-tunya"
       ],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "spouse-1760869057561",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": [
+            "person-1760869153679",
+            "person-1760869226410",
+            "person-1760869273310"
+          ]
+        }
+      ]
     },
     {
       "id": "lillian-ondari",
@@ -2893,6 +2904,67 @@
       "description": "",
       "parents": [
         "ruben-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "spouse-1760869057561",
+      "name": "Betty Nekesa Ohare",
+      "gender": "female",
+      "birthDate": "1994-12-21",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "benson-tunya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        }
+      ],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "person-1760869153679",
+      "name": "Pressylne Ohare",
+      "gender": "female",
+      "birthDate": "2016-12-07",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "benson-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760869226410",
+      "name": "Peacelydeel Oharre",
+      "gender": "female",
+      "birthDate": "2020-06-27",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "benson-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "person-1760869273310",
+      "name": "Palzleel Ohare",
+      "gender": "female",
+      "birthDate": "2024-11-07",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "benson-tunya"
       ],
       "spouses": [],
       "photo": "/photos/placeholder-female.jpg"
