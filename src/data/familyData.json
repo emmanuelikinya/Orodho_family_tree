@@ -917,8 +917,8 @@
       "id": "jonathan-tunya",
       "name": "Jonathan Tunya",
       "gender": "male",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/JonathanTunya.png",
       "description": "Jonathan Tunya, husband of Jael Etaliah. Father of 10 children.",
@@ -945,11 +945,11 @@
     },
     {
       "id": "jael-etaliah",
-      "name": "Jael Etaliah",
+      "name": "Jael Priscilla Orodho Etale",
       "memberId": "B06",
       "gender": "female",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/Jaeletaliah.png",
       "description": "Sixth child of Canon Ezekiel Orodho and Beldinah Indieka Orodho. The only daughter among 7 children. Married to Jonathan Tunya. Mother of 10 children.",
@@ -1529,11 +1529,11 @@
     },
     {
       "id": "abigael-tunya",
-      "name": "Abigael",
+      "name": "Abigael Oyiela Tunya",
       "memberId": "C37",
       "gender": "female",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "First child of Jael Etaliah and Jonathan Tunya.",
@@ -1557,11 +1557,11 @@
     },
     {
       "id": "amashold-etaliah-tunya",
-      "name": "Amashold Etaliah",
+      "name": "Hermershold Etale",
       "memberId": "C38",
       "gender": "male",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Second child of Jael Etaliah and Jonathan Tunya. Married to Lillian Ondari.",
@@ -1583,11 +1583,11 @@
     },
     {
       "id": "sophie-tunya",
-      "name": "Sophie",
+      "name": "Sophie Resi Tunya Obonyo",
       "memberId": "C39",
       "gender": "female",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Third child of Jael Etaliah and Jonathan Tunya.",
@@ -1595,15 +1595,26 @@
         "jael-etaliah",
         "jonathan-tunya"
       ],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "spouse-1760866988514",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": [
+            "person-1760867102944",
+            "person-1760867124993",
+            "person-1760867168823"
+          ]
+        }
+      ]
     },
     {
       "id": "mwanika-tunya",
-      "name": "Mwanika",
+      "name": "Nancy Mwanika Tunya",
       "memberId": "C40",
       "gender": "female",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Fourth child of Jael Etaliah and Jonathan Tunya.",
@@ -1611,7 +1622,14 @@
         "jael-etaliah",
         "jonathan-tunya"
       ],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "spouse-1760867302207",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        }
+      ]
     },
     {
       "id": "inita-tunya",
@@ -1749,11 +1767,11 @@
     },
     {
       "id": "lenox-etaliah",
-      "name": "Lenox Etaliah",
+      "name": "Lenox Etale",
       "memberId": "D03",
       "gender": "male",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Second child of Amashold Etaliah and Lillian Ondari.",
@@ -2524,6 +2542,86 @@
       ],
       "spouses": [],
       "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "spouse-1760866988514",
+      "name": "Richard Obonyo",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "sophie-tunya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        }
+      ],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760867102944",
+      "name": "Kelly Obonyo",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "sophie-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760867124993",
+      "name": "Badian Obonyo",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "sophie-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760867168823",
+      "name": "Brillack Obonyo",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "sophie-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "spouse-1760867302207",
+      "name": "Kennedy Amwayi Wangulu",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "mwanika-tunya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        }
+      ],
+      "photo": "/photos/placeholder-male.jpg"
     }
   ]
 }
