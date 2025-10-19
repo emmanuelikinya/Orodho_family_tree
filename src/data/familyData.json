@@ -1627,17 +1627,21 @@
           "spouseId": "spouse-1760867302207",
           "marriageDate": null,
           "marriageOrder": 1,
-          "children": []
+          "children": [
+            "person-1760867591985",
+            "person-1760867656435",
+            "person-1760867707853"
+          ]
         }
       ]
     },
     {
       "id": "inita-tunya",
-      "name": "Inita",
+      "name": "Eunita Anupi Tunya",
       "memberId": "C41",
       "gender": "female",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/placeholder-female.jpg",
       "description": "Fifth child of Jael Etaliah and Jonathan Tunya.",
@@ -2622,6 +2626,76 @@
         }
       ],
       "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760867591985",
+      "name": "Heidyne Wangulu",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "mwanika-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "person-1760867656435",
+      "name": "Clifflyte Wangulu",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "mwanika-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760867707853",
+      "name": "Winkline Wangulu",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "mwanika-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "person-1760868213011",
+      "name": "Vanglin",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "inita-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760868236093",
+      "name": "Angel",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "inita-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-female.jpg"
     }
   ]
 }
