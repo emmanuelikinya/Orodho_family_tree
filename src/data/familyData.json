@@ -1669,11 +1669,11 @@
     },
     {
       "id": "ezekiel-tunya",
-      "name": "Ezekiel",
+      "name": "Ezekiel Orodho Tunya",
       "memberId": "C43",
       "gender": "male",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Seventh child of Jael Etaliah and Jonathan Tunya.",
@@ -1681,15 +1681,26 @@
         "jael-etaliah",
         "jonathan-tunya"
       ],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "spouse-1760868321991",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": [
+            "person-1760868376558",
+            "person-1760868409590",
+            "person-1760868491455"
+          ]
+        }
+      ]
     },
     {
       "id": "nicodemus-tunya",
-      "name": "Nicodemus",
+      "name": "Nicodemus Ongeso Tunya",
       "memberId": "C44",
       "gender": "male",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Eighth child of Jael Etaliah and Jonathan Tunya.",
@@ -1697,15 +1708,25 @@
         "jael-etaliah",
         "jonathan-tunya"
       ],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "spouse-1760868581821",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": [
+            "person-1760868614785",
+            "person-1760868640368"
+          ]
+        }
+      ]
     },
     {
       "id": "ruben-tunya",
-      "name": "Ruben",
+      "name": "Reuben Andeche Tunya",
       "memberId": "C45",
       "gender": "male",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Ninth child of Jael Etaliah and Jonathan Tunya. Twin with Benson.",
@@ -1713,15 +1734,25 @@
         "jael-etaliah",
         "jonathan-tunya"
       ],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "spouse-1760868820132",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": [
+            "person-1760868869514",
+            "person-1760868910331"
+          ]
+        }
+      ]
     },
     {
       "id": "benson-tunya",
-      "name": "Benson",
+      "name": "Benson Ohare Tunya",
       "memberId": "C46",
       "gender": "male",
-      "birthDate": null,
-      "deathDate": null,
+      "birthDate": "",
+      "deathDate": "",
       "isDeceased": false,
       "photo": "/photos/placeholder-male.jpg",
       "description": "Tenth child of Jael Etaliah and Jonathan Tunya. Twin with Ruben.",
@@ -2693,6 +2724,175 @@
       "description": "",
       "parents": [
         "inita-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "person-1760868263943",
+      "name": "Vangline",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "inita-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "spouse-1760868321991",
+      "name": "Pauline Andeso",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "ezekiel-tunya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        }
+      ],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "person-1760868376558",
+      "name": "Jezreel Tunya",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "ezekiel-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760868409590",
+      "name": "Sabbatum Tunya",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "ezekiel-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760868491455",
+      "name": "Zibbar Tunya",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "ezekiel-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "spouse-1760868581821",
+      "name": "Betty Tunya",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "nicodemus-tunya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        }
+      ],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "person-1760868614785",
+      "name": "Ongecha Tunya",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "nicodemus-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "person-1760868640368",
+      "name": "Shelma Tunya",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "nicodemus-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "spouse-1760868820132",
+      "name": "Dorcas Chepkemoi",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "ruben-tunya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        }
+      ],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "person-1760868869514",
+      "name": "Goodwill Tunya",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "ruben-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760868910331",
+      "name": "Bahati Tunya",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "ruben-tunya"
       ],
       "spouses": [],
       "photo": "/photos/placeholder-female.jpg"
