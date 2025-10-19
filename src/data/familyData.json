@@ -1541,7 +1541,19 @@
         "jael-etaliah",
         "jonathan-tunya"
       ],
-      "spouses": []
+      "spouses": [
+        {
+          "spouseId": "spouse-1760865717351",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": [
+            "person-1760865767341",
+            "person-1760865893097",
+            "person-1760865930462",
+            "person-1760865973981"
+          ]
+        }
+      ]
     },
     {
       "id": "amashold-etaliah-tunya",
@@ -2437,6 +2449,81 @@
         "stella-alibiri"
       ],
       "spouses": []
+    },
+    {
+      "id": "spouse-1760865717351",
+      "name": "Fredrick Mukhwana",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [],
+      "spouses": [
+        {
+          "spouseId": "abigael-tunya",
+          "marriageDate": null,
+          "marriageOrder": 1,
+          "children": []
+        }
+      ],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760865767341",
+      "name": "Audrine Ongecha Mukhwana",
+      "gender": "male",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "abigael-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-male.jpg"
+    },
+    {
+      "id": "person-1760865893097",
+      "name": "Modesta Mukhwana",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "abigael-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "person-1760865930462",
+      "name": "Macrine Mukhwana",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "abigael-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-female.jpg"
+    },
+    {
+      "id": "person-1760865973981",
+      "name": "Brilliant Mukhwana",
+      "gender": "female",
+      "birthDate": "",
+      "deathDate": "",
+      "isDeceased": false,
+      "description": "",
+      "parents": [
+        "abigael-tunya"
+      ],
+      "spouses": [],
+      "photo": "/photos/placeholder-female.jpg"
     }
   ]
 }
