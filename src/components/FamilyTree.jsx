@@ -74,9 +74,7 @@ const FamilyTreeInner = ({ familyMembers: initialFamilyMembers }) => {
   // Transform family data to React Flow format
   const { nodes: initialNodes, edges: initialEdges } = useMemo(
     () => {
-      console.log('Transforming family data, members count:', familyMembers?.length);
       const data = transformToFlowData(familyMembers);
-      console.log('Transformation complete - Nodes:', data.nodes.length, 'Edges:', data.edges.length);
 
       // Attach callbacks to each node
       return {
@@ -99,21 +97,18 @@ const FamilyTreeInner = ({ familyMembers: initialFamilyMembers }) => {
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const [positionsLoaded, setPositionsLoaded] = useState(false);
 
-  console.log('Current nodes in state:', nodes.length);
-  console.log('Current edges in state:', edges.length);
-
-  if (nodes.length > 0) {
-    console.log('Sample node position:', nodes[0]?.position);
-    console.log('Sample node data:', nodes[0]?.data?.name);
-  }
-
-  // Fit view when nodes are loaded
+  // Fit view when nodes are loaded - center the tree
   useEffect(() => {
     if (nodes.length > 0) {
       setTimeout(() => {
-        fitView({ padding: 0.2, duration: 800 });
-        console.log('FitView applied to', nodes.length, 'nodes');
-      }, 100);
+        fitView({
+          padding: 0.1,
+          includeHiddenNodes: false,
+          minZoom: 0.1,
+          maxZoom: 1,
+          duration: 1000
+        });
+      }, 150);
     }
   }, [nodes.length, fitView]);
 
@@ -314,7 +309,7 @@ const FamilyTreeInner = ({ familyMembers: initialFamilyMembers }) => {
   }, [familyMembers, setNodes, handleEdit, handleAddChild, handleAddSpouse]);
 
   return (
-    <div style={{ width: '100%', height: '100vh', background: '#f5f5f5' }}>
+    <div style={{ width: '100%', height: '100vh' }}>
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -323,10 +318,9 @@ const FamilyTreeInner = ({ familyMembers: initialFamilyMembers }) => {
         onNodeClick={onNodeClick}
         nodeTypes={nodeTypes}
         fitView
-        fitViewOptions={{ padding: 0.2 }}
+        fitViewOptions={{ padding: 0.1, minZoom: 0.1, maxZoom: 1 }}
         minZoom={0.01}
         maxZoom={4}
-        defaultViewport={{ x: 0, y: 0, zoom: 0.5 }}
         proOptions={{ hideAttribution: true }}
       >
         <Controls />
