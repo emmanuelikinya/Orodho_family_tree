@@ -5,6 +5,8 @@ import ReactFlow, {
   Background,
   useNodesState,
   useEdgesState,
+  useReactFlow,
+  ReactFlowProvider,
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 import { Download, Upload } from 'lucide-react';
@@ -21,7 +23,8 @@ const nodeTypes = {
   personNode: PersonNode,
 };
 
-const FamilyTree = ({ familyMembers: initialFamilyMembers }) => {
+const FamilyTreeInner = ({ familyMembers: initialFamilyMembers }) => {
+  const { fitView } = useReactFlow();
   const [familyMembers, setFamilyMembers] = useState(initialFamilyMembers);
   const [selectedPerson, setSelectedPerson] = useState(null);
   const [editingPerson, setEditingPerson] = useState(null);
@@ -98,6 +101,16 @@ const FamilyTree = ({ familyMembers: initialFamilyMembers }) => {
 
   console.log('Current nodes in state:', nodes.length);
   console.log('Current edges in state:', edges.length);
+
+  // Fit view when nodes are loaded
+  useEffect(() => {
+    if (nodes.length > 0) {
+      setTimeout(() => {
+        fitView({ padding: 0.2, duration: 800 });
+        console.log('FitView applied to', nodes.length, 'nodes');
+      }, 100);
+    }
+  }, [nodes.length, fitView]);
 
   // Load positions from localStorage on mount
   useEffect(() => {
@@ -497,6 +510,14 @@ const FamilyTree = ({ familyMembers: initialFamilyMembers }) => {
         </div>
       </div>
     </div>
+  );
+};
+
+const FamilyTree = (props) => {
+  return (
+    <ReactFlowProvider>
+      <FamilyTreeInner {...props} />
+    </ReactFlowProvider>
   );
 };
 
