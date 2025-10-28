@@ -71,7 +71,9 @@ const FamilyTree = ({ familyMembers: initialFamilyMembers }) => {
   // Transform family data to React Flow format
   const { nodes: initialNodes, edges: initialEdges } = useMemo(
     () => {
+      console.log('Transforming family data, members count:', familyMembers?.length);
       const data = transformToFlowData(familyMembers);
+      console.log('Transformation complete - Nodes:', data.nodes.length, 'Edges:', data.edges.length);
 
       // Attach callbacks to each node
       return {
@@ -93,6 +95,9 @@ const FamilyTree = ({ familyMembers: initialFamilyMembers }) => {
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const [positionsLoaded, setPositionsLoaded] = useState(false);
+
+  console.log('Current nodes in state:', nodes.length);
+  console.log('Current edges in state:', edges.length);
 
   // Load positions from localStorage on mount
   useEffect(() => {
