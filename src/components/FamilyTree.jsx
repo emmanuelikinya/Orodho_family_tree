@@ -102,6 +102,11 @@ const FamilyTreeInner = ({ familyMembers: initialFamilyMembers }) => {
   console.log('Current nodes in state:', nodes.length);
   console.log('Current edges in state:', edges.length);
 
+  if (nodes.length > 0) {
+    console.log('Sample node position:', nodes[0]?.position);
+    console.log('Sample node data:', nodes[0]?.data?.name);
+  }
+
   // Fit view when nodes are loaded
   useEffect(() => {
     if (nodes.length > 0) {
@@ -309,7 +314,7 @@ const FamilyTreeInner = ({ familyMembers: initialFamilyMembers }) => {
   }, [familyMembers, setNodes, handleEdit, handleAddChild, handleAddSpouse]);
 
   return (
-    <div style={{ width: '100%', height: '100vh' }}>
+    <div style={{ width: '100%', height: '100vh', background: '#f5f5f5' }}>
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -319,9 +324,10 @@ const FamilyTreeInner = ({ familyMembers: initialFamilyMembers }) => {
         nodeTypes={nodeTypes}
         fitView
         fitViewOptions={{ padding: 0.2 }}
-        minZoom={0.05}
-        maxZoom={2}
-        defaultViewport={{ x: 100, y: 0, zoom: 0.6 }}
+        minZoom={0.01}
+        maxZoom={4}
+        defaultViewport={{ x: 0, y: 0, zoom: 0.5 }}
+        proOptions={{ hideAttribution: true }}
       >
         <Controls />
         <MiniMap
